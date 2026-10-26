@@ -14,9 +14,18 @@ Media/document content colors and saved user values remain unchanged.
 KIOControl.exe, local.galaxycontrol.portable, KIO.Tools.Desktop, private state
 paths, OAuth/extension identities, fixed Drive pins and the Ed25519 update key
 and feed remain stable. Signed update roots stay KIO-Control-Windows/Mac.
-Customer ZIP/app/launcher names use Bogo Tools. Existing app installation paths
-remain valid during upgrades; localized bundle display metadata supplies the
-new name without moving user files or credentials.
+Customer ZIP/app/launcher names use Bogo Tools. After an original signed Mac
+update has completed and its installer has exited, the new backend may rename
+only its own `KIO Tools.app` to the absent same-parent `Bogo Tools.app`. A private
+detached helper waits for the native app and backend to quit normally, checks
+the unchanged bundle identifier, version, owner and stable signer again, and
+uses Darwin's atomic exclusive rename. Every bundle file and file ID is kept;
+user documents, data/auth paths, Keychain and account pins are not moved. Only
+an existing owned login item's exact old app path is retargeted, preserving its
+other values and enabled choice. Collisions, symlinks, foreign bundles, running
+processes and permissions refuse the change; errors retain the app and are
+reported through the existing update status. No force kill, Dock reset, signing
+identity change or metadata-only rename is presented as executed GUI acceptance.
 
 The old approved KIO source artwork remains in version control and is retained
 below as historical provenance. It is no longer referenced by the current UI.

@@ -1876,10 +1876,10 @@
   "files": [
     {
       "path": "BRANDING.md",
-      "bytes": 3309,
-      "sha256": "75c6361aca38cf6377886e82bbb147745c8989e87941a16cf7e02280cd26e69d",
+      "bytes": 4047,
+      "sha256": "9673b459505e61a097ffe2255f34101ca0ec191081c7ac383aef395d5ce85572",
       "source": "BRANDING.md",
-      "sourceSHA256": "75c6361aca38cf6377886e82bbb147745c8989e87941a16cf7e02280cd26e69d"
+      "sourceSHA256": "9673b459505e61a097ffe2255f34101ca0ec191081c7ac383aef395d5ce85572"
     },
     {
       "path": "BUILDING.txt",
@@ -2041,6 +2041,13 @@
       "sourceSHA256": "09c85a0f505fecff60031d2d27356f346851d2f66216139392f7fddda7a561e6"
     },
     {
+      "path": "agent/mac_bundle_migration.py",
+      "bytes": 16435,
+      "sha256": "e73c721427ba708e8433b653b2fea6b86c1b9c292dc1192ae9b5896044c0ec73",
+      "source": "agent/mac_bundle_migration.py",
+      "sourceSHA256": "e73c721427ba708e8433b653b2fea6b86c1b9c292dc1192ae9b5896044c0ec73"
+    },
+    {
       "path": "agent/operation-options.json",
       "bytes": 4455,
       "sha256": "d38d1f0a19171b0511e1ac4f2048fada9359d00302baaa0c0c656eea8de4be32",
@@ -2133,10 +2140,10 @@
     },
     {
       "path": "agent/updater.py",
-      "bytes": 10744,
-      "sha256": "089ec6adba64391fc4a23a651182781dc3f58c8197cb2f4d8dc55b655aa7c128",
+      "bytes": 11522,
+      "sha256": "89307017b5af7bafbc2e058b12bfc9b5205da68ad5fedbf2e49e07cd8098883c",
       "source": "agent/updater.py",
-      "sourceSHA256": "089ec6adba64391fc4a23a651182781dc3f58c8197cb2f4d8dc55b655aa7c128"
+      "sourceSHA256": "89307017b5af7bafbc2e058b12bfc9b5205da68ad5fedbf2e49e07cd8098883c"
     },
     {
       "path": "bogo-tools-artwork.json",
@@ -3721,10 +3728,10 @@
     },
     {
       "path": "integration-tests/bogo_branding_tests.py",
-      "bytes": 4173,
-      "sha256": "215e32f3026f19ad008aa56c793e72244e2a24d9e815e3c3b5c20ebeef7f696f",
+      "bytes": 6058,
+      "sha256": "3e60a3de6c9802e3e876977d71405e6fba150482e5628818559ab7df348f5f43",
       "source": "integration-tests/bogo_branding_tests.py",
-      "sourceSHA256": "215e32f3026f19ad008aa56c793e72244e2a24d9e815e3c3b5c20ebeef7f696f"
+      "sourceSHA256": "3e60a3de6c9802e3e876977d71405e6fba150482e5628818559ab7df348f5f43"
     },
     {
       "path": "integration-tests/browser_broker_tests.py",
@@ -3893,6 +3900,13 @@
       "sha256": "5bbf4eef03d367dc32464dbcf90b633322a0269a089cf89e301f48a23493b1d4",
       "source": "integration-tests/local_feature_routes_tests.py",
       "sourceSHA256": "5bbf4eef03d367dc32464dbcf90b633322a0269a089cf89e301f48a23493b1d4"
+    },
+    {
+      "path": "integration-tests/mac_bundle_migration_tests.py",
+      "bytes": 14408,
+      "sha256": "ba2072e5136396481bc6ca9e19612f3e7353334999d2f764cbb7214ba0622452",
+      "source": "integration-tests/mac_bundle_migration_tests.py",
+      "sourceSHA256": "ba2072e5136396481bc6ca9e19612f3e7353334999d2f764cbb7214ba0622452"
     },
     {
       "path": "integration-tests/native_cancel_tests.py",

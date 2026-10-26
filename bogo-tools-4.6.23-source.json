@@ -2,27 +2,29 @@
   "schemaVersion": 1,
   "program": "Bogo Tools",
   "version": "4.6.23",
+  "candidateRevision": "r2-unpublished",
   "sourceDirectory": "source",
   "sourceArchive": {
     "filename": "Bogo-Tools-4.6.23-source.zip",
-    "bytes": 7431565,
-    "sha256": "4d632a284a12a41c2e3154058f7770658677380f945ccf796dddd4ae0729f8e2",
-    "files": 438
+    "bytes": 7442659,
+    "sha256": "2bc1e8b7faf069f5055b7a16ad656aa5fd366bdb015e0c7dd9ed267c10edf999",
+    "files": 440
   },
-  "sourceManifestSha256": "d0db864e227cbfa464bc2bcf2f3bb5878103b296e491c832165681b4d9bf2c41",
-  "implementationCommit": "c171aea6ebfe3f96bba8b1c84a42dd27c57a718f",
+  "sourceManifestSha256": "cd81f16cd4d1ee7cd9d0e58a74ff2ed1cb24b4296b1eea427b7ab7f781db27c0",
+  "implementationCommit": "f39fe7c01eff416ec1017b31760fd060126e673d",
   "tests": {
     "python": {
-      "run": 503,
-      "passed": 501,
+      "run": 520,
+      "passed": 518,
       "failed": 0,
       "errors": 0,
       "existingPlatformSkips": 2
     },
-    "uiPassed": 184,
-    "extensionPassed": 51
+    "unchangedUiInitialRebrandPassed": 184,
+    "unchangedExtensionInitialRebrandPassed": 51
   },
-  "actualGuiAcceptance": "pending; no GUI acceptance is claimed by this source commit",
+  "actualGuiAcceptance": "pending fresh Windows and macOS VM acceptance; no GUI success is claimed by this source commit",
   "privateDataIncluded": false,
-  "historicalImplementationGitHistoryIncluded": false
+  "historicalImplementationGitHistoryIncluded": false,
+  "existingStableUpdateFeedChanged": false
 }

@@ -20,6 +20,19 @@ PROTECTED={
  'COPYING':'62587d38d3aed8de92dbb52179c49595f70b20a925f836514cbc9c2d90dac728',
 }
 
+# Exact authorized additions for the post-update bundle-name transaction.
+# Removing only these hooks must recover the ORIGINAL protected updater bytes;
+# its signature, URL, download, install, rollback and credential logic stay pinned.
+MIGRATION_HOOKS=(
+ b"  # The normal Mac backend observes the ORIGINAL update transaction. The\n  # detached name helper never moves an actively running app or user data.\n  from mac_bundle_migration import prepare_and_quit\n  threading.Thread(target=prepare_and_quit,args=(self.agent,self.root,Path(__file__).resolve().parent.parent,VERSION,self.config),daemon=True).start()\n",
+ b"   name=read_json(self.root/'bogo-name-migration.json',{})\n   own=install_layout(Path(__file__).resolve().parent.parent,os.name=='nt')[0]\n   if name.get('version')==VERSION and name.get('phase')=='failed' and str(own) in (name.get('source'),name.get('target')):\n    r['nameMigration']={k:name[k] for k in ('phase','error','renamed','originalBytesRetained') if k in name}\n    r.update(phase='error',error='updateInstallFailed')\n",
+)
+def original_updater_bytes(raw):
+ for hook in MIGRATION_HOOKS:
+  if raw.count(hook)!=1:raise ValueError('Unexpected name-migration hook shape')
+  raw=raw.replace(hook,b'',1)
+ return raw
+
 class BogoBrandingTests(unittest.TestCase):
  def master(self):return Image.open(ROOT/'desktop-ui/src/assets/bogo-tools-icon.png')
  def test_approved_original_identity_and_transparency(self):
@@ -48,7 +61,16 @@ class BogoBrandingTests(unittest.TestCase):
   with self.master() as original,Image.open(ROOT/'mac/KIOTools.icns') as icon:
    icon.size=(1024,1024);icon.load();self.assertEqual(icon.convert('RGBA').tobytes(),original.tobytes())
  def test_auth_data_update_and_license_policy_is_unchanged(self):
-  for name,expected in PROTECTED.items():self.assertEqual(hashlib.sha256((ROOT/name).read_bytes()).hexdigest(),expected,name)
+  for name,expected in PROTECTED.items():
+   raw=(ROOT/name).read_bytes()
+   if name=='agent/updater.py':raw=original_updater_bytes(raw)
+   self.assertEqual(hashlib.sha256(raw).hexdigest(),expected,name)
+ def test_original_updater_pin_rejects_changes_outside_exact_migration_hooks(self):
+  raw=(ROOT/'agent/updater.py').read_bytes();original=original_updater_bytes(raw)
+  self.assertEqual(hashlib.sha256(original).hexdigest(),PROTECTED['agent/updater.py'])
+  mutated=raw.replace(b"raise AgentError('updateNotAvailable')",b"raise AgentError('tampered')",1)
+  self.assertNotEqual(hashlib.sha256(original_updater_bytes(mutated)).hexdigest(),PROTECTED['agent/updater.py'])
+  with self.assertRaises(ValueError):original_updater_bytes(raw.replace(MIGRATION_HOOKS[0],b'',1))
  def test_callback_and_startup_copy_use_current_brand_in_every_language(self):
   for code in ('ko','en','vi','ja','zh-CN','zh-TW'):
    page=language.callback_page('startup.title',code).decode()

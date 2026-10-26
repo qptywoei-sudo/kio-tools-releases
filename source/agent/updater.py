@@ -52,6 +52,10 @@ class Updater:
   self.agent=agent;self.lock=threading.RLock();self.root=private_dir(agent.state/'updates');self.config=read_json(Path(__file__).with_name('update-channel.json'),{});self.preferences=read_json(self.root/'preferences.json',{'autoCheck':True});self.envelope=None;self.package=None;self.archive=None
   self.value={'currentVersion':VERSION,'latestVersion':None,'available':False,'phase':'idle','received':0,'total':0,'error':'','checkedAt':None,'notes':[],'autoCheck':self.preferences.get('autoCheck',True),'configured':bool(self.config.get('feedUrl'))}
   self.receipt=self.root/'last-install.json'
+  # The normal Mac backend observes the ORIGINAL update transaction. The
+  # detached name helper never moves an actively running app or user data.
+  from mac_bundle_migration import prepare_and_quit
+  threading.Thread(target=prepare_and_quit,args=(self.agent,self.root,Path(__file__).resolve().parent.parent,VERSION,self.config),daemon=True).start()
  def status(self):
   with self.lock:
    r=dict(self.value);receipt=read_json(self.receipt,{})
@@ -59,6 +63,11 @@ class Updater:
    try:newer_failure=receipt.get('phase')=='failed' and version(receipt.get('version','0.0.0'))>version(VERSION)
    except (ValueError,TypeError):newer_failure=False
    if newer_failure:r['lastFailure']={k:receipt[k] for k in ('version','error','failedStage','reopened') if k in receipt}
+   name=read_json(self.root/'bogo-name-migration.json',{})
+   own=install_layout(Path(__file__).resolve().parent.parent,os.name=='nt')[0]
+   if name.get('version')==VERSION and name.get('phase')=='failed' and str(own) in (name.get('source'),name.get('target')):
+    r['nameMigration']={k:name[k] for k in ('phase','error','renamed','originalBytesRetained') if k in name}
+    r.update(phase='error',error='updateInstallFailed')
    return r
  def auto_loop(self):
   if self.agent.stopping.wait(15):return
