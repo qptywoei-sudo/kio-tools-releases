@@ -1,0 +1,39 @@
+{
+  "passed": 30,
+  "checks": [
+    "PNG to jpg actual decode+resize",
+    "Transparent JPEG background white",
+    "Real output byte metrics jpg",
+    "PNG to png actual decode+resize",
+    "Real output byte metrics png",
+    "PNG to webp actual decode+resize",
+    "Real output byte metrics webp",
+    "EXIF rotation normalized",
+    "JPEG to WebP",
+    "No automatic enlargement",
+    "Percentage resize",
+    "Original image SHA preserved",
+    "PDF merge count+content",
+    "PDF split selected pages",
+    "PDF delete+reorder+rotate",
+    "Images to PDF A4 landscape",
+    "Image-size PDF ratio",
+    "PDF to png ordered actual files",
+    "PDF to jpg ordered actual files",
+    "PDF rotated annotation top-left placement",
+    "PDF source searchable text preserved under annotation",
+    "qr encode/decode roundtrip",
+    "code128 encode/decode roundtrip",
+    "ean13 encode/decode roundtrip",
+    "ean8 encode/decode roundtrip",
+    "WiFi QR escaped exact roundtrip",
+    "Invalid barcode checksum rejected",
+    "Invalid PDF range rejected",
+    "Unreadable QR reports no guessing",
+    "Existing result never overwritten"
+  ],
+  "versions": {
+    "Pillow": "12.3.0",
+    "PyMuPDF": "1.28.2"
+  }
+}

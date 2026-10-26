@@ -1,0 +1,4 @@
+#include "PdfWorkspace.h"
+#include <cassert>
+#include <iostream>
+int main(){auto normal=PdfWorkspace::calculate(1100,800,96,false,false,.46f);assert(normal.pageHeight>=420);assert(normal.column>=420);auto large=PdfWorkspace::calculate(1500,1100,96,false,false,.46f);assert(large.pageHeight>normal.pageHeight&&large.usable>normal.usable);for(int dpi:{80,96,120,144,192})for(bool advanced:{false,true})for(float split:{.32f,.46f,.7f}){auto r=PdfWorkspace::calculate(1100*dpi/96,640*dpi/96,dpi,advanced,true,split);assert(r.column>0&&r.usable-r.column-r.gap>=330*dpi/96);assert(r.top+r.pageHeight+r.footer==r.totalHeight);assert(r.pageHeight>=260*dpi/96);assert(r.right+r.usable-r.column-r.gap==r.left+r.usable);}std::cout<<"PASS: large PDF workspace expansion, page height 420 when available, divider limits, folded/expanded footer, five DPI scales\n";}

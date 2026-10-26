@@ -1,0 +1,16 @@
+{
+  "id": "tools",
+  "name": "Bogo Tools",
+  "version": "4.6.23",
+  "approvedSource": "Owner-approved separate Bogo Tools original, created 2026-10-26 to match the 14 Bogo program icon family; not a reused Drive program icon",
+  "filename": "desktop-ui/src/assets/bogo-tools-icon.png",
+  "bytes": 28248,
+  "sha256": "e3196a03cf3d259b5e3662c39206b36339b22986ac910b0e772fb84f7759957b",
+  "width": 1024,
+  "height": 1024,
+  "mode": "RGBA",
+  "orange": "#FC7501",
+  "background": "transparent outside orange tile",
+  "sourceSvg": "desktop-ui/src/assets/bogo-tools-master.svg",
+  "sourceSvgSha256": "47c93ef4bd9a350cff15a47e6edb2cf849671de7d200ccb3190a0ce9d7f42737"
+}

@@ -1,0 +1,111 @@
+{
+  "cli": "python engine/agent/server.py --state-dir <private per-user Agent> --ui-dir <resources/tools-ui> [--port 4323] [--allowed-origin <exact URL origin> ...]",
+  "engineImport": "server.py parent-parent is engine/ containing engine.py and deps, runtimes; no --engine-path needed",
+  "health": {
+    "connected": true,
+    "version": "4.1.0",
+    "os": "macOS|Windows",
+    "deviceName": "hostname",
+    "deviceId": "stable UUID",
+    "capabilities": [
+      "files",
+      "image",
+      "pdf",
+      "capture",
+      "record",
+      "fullPageCapture",
+      "qr",
+      "barcode",
+      "fileSearch",
+      "globalShortcuts"
+    ],
+    "operations": [
+      "allowlisted engine/native names"
+    ],
+    "nativeReady": true,
+    "architecture": "arm64|x86_64"
+  },
+  "device": "same identity fields as health, status:'connected', lastSeen:ISO UTC",
+  "file": {
+    "id": "opaque UUID",
+    "name": "basename",
+    "size": 123,
+    "mime": "image/png"
+  },
+  "job": {
+    "id": "UUID",
+    "operation": "image_process",
+    "status": "queued|running|complete|failed|cancelled",
+    "progress": 0,
+    "errorCode": "",
+    "result": {
+      "files": [
+        {
+          "id": "opaque UUID",
+          "name": "basename",
+          "size": 123,
+          "mime": "image/png"
+        }
+      ],
+      "data": {}
+    },
+    "createdAt": "ISO UTC"
+  },
+  "events": [
+    "ready {device,settings}",
+    "job {job}",
+    "index {rootId,status,done,total}",
+    "settings {settings}",
+    "browser {connected,browser}",
+    "device {device}"
+  ],
+  "settings": {
+    "language": "ko",
+    "autoStart": false,
+    "saveFolderName": "GalaxyControl",
+    "shortcuts": {
+      "areaCapture": "Control+Shift+A",
+      "fullCapture": "",
+      "webCapture": "",
+      "recordToggle": ""
+    }
+  },
+  "nativeHeartbeat": "bridge/status.json atomically written every 2 sec {version:1,pid:<nativepid>,updatedAt:<Unixseconds>,os:'macOS|Windows'}; stale >12 sec means offline",
+  "nativeSignals": "bridge/signals/<uuid>.json atomically write {id:<uuid>,operation:'web.capture'|'record.toggle',args:{},createdAt:<Unix seconds>}; root consumes and deletes. Only exact allowlist, stale >30 sec rejected.",
+  "nativeSettings": "settings.apply args shortcuts keys areaCapture/fullCapture/webCapture/recordToggle string normalized modifier+key. Empty disables. settings operation returns ok:false/errorCode:'shortcutConflict' on duplicate/native registration failure; don't overwrite working old shortcut set on failure.",
+  "languageCodes": [
+    "ko",
+    "en",
+    "vi",
+    "ja",
+    "zh"
+  ],
+  "errors": "short stable errorCode keys e.g invalidRequest, forbiddenOrigin, unauthorized, pairingDenied, cancelled, permissionRequired, nativeUnavailable, unsupported, inputMissing, processingFailed, conflict. UI t('tools.error.'+code), no untrusted raw error HTML.",
+  "security": "All non-health/non-tools endpoints exact Origin and token require. Pair exact allowlisted origin but no token -> native approval. File paths only native bridge, opaque IDs HTTP. SSE event:type lines with JSON data; token never URL. Artifact binary authorized fetch then Blob URL. DELETE /pair token revocation. POST /jobs/<id>/cancel.",
+  "portCandidates": [
+    4323,
+    4324,
+    4325,
+    4321
+  ],
+  "phone": {
+    "available": true,
+    "devices": [
+      {
+        "id": "phone-<32 hex>",
+        "label": "Galaxy",
+        "transport": "usb|wifi",
+        "status": "device|unauthorized|offline"
+      }
+    ],
+    "running": false,
+    "activeDeviceId": null,
+    "options": {
+      "keyboard": "uhid",
+      "mouse": "sdk",
+      "audio": "output",
+      "clipboard": true
+    },
+    "errorCode": "optional short typed code; no raw ADB output"
+  }
+}

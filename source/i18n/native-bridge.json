@@ -1,0 +1,443 @@
+{
+  "로컬 도구를 준비하는 중…": {
+    "en": "Preparing local tools…",
+    "vi": "Đang chuẩn bị công cụ cục bộ…",
+    "ja": "ローカルツールを準備しています…",
+    "zh": "正在准备本地工具…",
+    "ko": "로컬 도구를 준비하는 중…",
+    "zh-CN": "正在准备本地工具…",
+    "zh-TW": "正在準備本地工具…"
+  },
+  "기존 Mac 도구": {
+    "en": "Native Mac tools",
+    "vi": "Công cụ Mac có sẵn",
+    "ja": "Macの標準ツール",
+    "zh": "原有 Mac 工具",
+    "ko": "기존 Mac 도구",
+    "zh-CN": "原有 Mac 工具",
+    "zh-TW": "原有 Mac 工具"
+  },
+  "다시 연결": {
+    "en": "Reconnect",
+    "vi": "Kết nối lại",
+    "ja": "再接続",
+    "zh": "重新连接",
+    "ko": "다시 연결",
+    "zh-CN": "重新连接",
+    "zh-TW": "重新連線"
+  },
+  "로컬 연결 폴더를 준비하지 못했습니다. 기존 Mac 도구를 사용하세요.": {
+    "en": "Could not prepare the local connection folder. Use the native Mac tools.",
+    "vi": "Không thể chuẩn bị thư mục kết nối cục bộ. Hãy dùng công cụ Mac có sẵn.",
+    "ja": "ローカル接続フォルダを準備できませんでした。Macの標準ツールをご利用ください。",
+    "zh": "无法准备本地连接文件夹。请使用原有 Mac 工具。",
+    "ko": "로컬 연결 폴더를 준비하지 못했습니다. 기존 Mac 도구를 사용하세요.",
+    "zh-CN": "无法准备本地连接文件夹。请使用原有 Mac 工具。",
+    "zh-TW": "無法準備本地連線資料夾。請使用原有 Mac 工具。"
+  },
+  "로컬 처리 구성요소가 없습니다. 기존 Mac 도구는 계속 사용할 수 있습니다.": {
+    "en": "Local processing components are missing. Native Mac tools remain available.",
+    "vi": "Thiếu thành phần xử lý cục bộ. Bạn vẫn có thể dùng công cụ Mac có sẵn.",
+    "ja": "ローカル処理の構成要素がありません。Macの標準ツールは引き続き利用できます。",
+    "zh": "缺少本地处理组件。原有 Mac 工具仍可使用。",
+    "ko": "로컬 처리 구성요소가 없습니다. 기존 Mac 도구는 계속 사용할 수 있습니다.",
+    "zh-CN": "缺少本地处理组件。原有 Mac 工具仍可使用。",
+    "zh-TW": "缺少本地處理元件。原有 Mac 工具仍可使用。"
+  },
+  "로컬 연결이 종료되었습니다. 다시 연결하거나 기존 Mac 도구를 사용하세요.": {
+    "en": "The local connection ended. Reconnect or use the native Mac tools.",
+    "vi": "Kết nối cục bộ đã kết thúc. Hãy kết nối lại hoặc dùng công cụ Mac có sẵn.",
+    "ja": "ローカル接続が終了しました。再接続するか、Macの標準ツールをご利用ください。",
+    "zh": "本地连接已结束。请重新连接或使用原有 Mac 工具。",
+    "ko": "로컬 연결이 종료되었습니다. 다시 연결하거나 기존 Mac 도구를 사용하세요.",
+    "zh-CN": "本地连接已结束。请重新连接或使用原有 Mac 工具。",
+    "zh-TW": "本地連線已結束。請重新連線或使用原有 Mac 工具。"
+  },
+  "로컬 처리를 시작하지 못했습니다. 다시 연결하세요.": {
+    "en": "Could not start local processing. Please reconnect.",
+    "vi": "Không thể bắt đầu xử lý cục bộ. Hãy kết nối lại.",
+    "ja": "ローカル処理を開始できませんでした。再接続してください。",
+    "zh": "无法启动本地处理。请重新连接。",
+    "ko": "로컬 처리를 시작하지 못했습니다. 다시 연결하세요.",
+    "zh-CN": "无法启动本地处理。请重新连接。",
+    "zh-TW": "無法啟動本地處理。請重新連線。"
+  },
+  "이 Mac에서 안전하게 처리합니다.": {
+    "en": "Processing locally on this Mac.",
+    "vi": "Xử lý cục bộ trên máy Mac này.",
+    "ja": "このMac内で処理します。",
+    "zh": "在此 Mac 上进行本地处理。",
+    "ko": "이 Mac에서 안전하게 처리합니다.",
+    "zh-CN": "在此 Mac 上进行本地处理。",
+    "zh-TW": "在此 Mac 上進行本地處理。"
+  },
+  "로컬 연결을 기다리는 중입니다. 기존 Mac 도구를 사용할 수 있습니다.": {
+    "en": "Waiting for the local connection. Native Mac tools are available.",
+    "vi": "Đang chờ kết nối cục bộ. Công cụ Mac có sẵn vẫn dùng được.",
+    "ja": "ローカル接続を待っています。Macの標準ツールを利用できます。",
+    "zh": "正在等待本地连接。可使用原有 Mac 工具。",
+    "ko": "로컬 연결을 기다리는 중입니다. 기존 Mac 도구를 사용할 수 있습니다.",
+    "zh-CN": "正在等待本地连接。可使用原有 Mac 工具。",
+    "zh-TW": "正在等待本地連線。可使用原有 Mac 工具。"
+  },
+  "공통 화면을 열지 못했습니다. 다시 연결하거나 기존 Mac 도구를 사용하세요.": {
+    "en": "Could not open the shared tools screen. Reconnect or use the native Mac tools.",
+    "vi": "Không thể mở màn hình công cụ chung. Hãy kết nối lại hoặc dùng công cụ Mac có sẵn.",
+    "ja": "共通ツール画面を開けませんでした。再接続するか、Macの標準ツールをご利用ください。",
+    "zh": "无法打开共用工具界面。请重新连接或使用原有 Mac 工具。",
+    "ko": "공통 화면을 열지 못했습니다. 다시 연결하거나 기존 Mac 도구를 사용하세요.",
+    "zh-CN": "无法打开共用工具界面。请重新连接或使用原有 Mac 工具。",
+    "zh-TW": "無法開啟共用工具介面。請重新連線或使用原有 Mac 工具。"
+  },
+  "브라우저 연결을 허용할까요?": {
+    "en": "Allow this browser connection?",
+    "vi": "Cho phép kết nối trình duyệt này?",
+    "ja": "このブラウザー接続を許可しますか？",
+    "zh": "允许此浏览器连接吗？",
+    "ko": "브라우저 연결을 허용할까요?",
+    "zh-CN": "允许此浏览器连接吗？",
+    "zh-TW": "允許此瀏覽器連線嗎？"
+  },
+  "아래 주소가 이 Mac의 로컬 도구와 선택한 파일을 사용할 수 있도록 허용합니다. 본인이 연 연결만 승인하세요.": {
+    "en": "Allow the address below to use this Mac’s local tools and selected files. Approve only a connection you opened.",
+    "vi": "Cho phép địa chỉ bên dưới dùng công cụ cục bộ và các tệp đã chọn trên máy Mac này. Chỉ chấp thuận kết nối do bạn mở.",
+    "ja": "以下のアドレスに、このMacのローカルツールと選択したファイルの利用を許可します。自分で開いた接続だけを承認してください。",
+    "zh": "允许以下地址使用此 Mac 的本地工具和已选文件。请仅批准您自己发起的连接。",
+    "ko": "아래 주소가 이 Mac의 로컬 도구와 선택한 파일을 사용할 수 있도록 허용합니다. 본인이 연 연결만 승인하세요.",
+    "zh-CN": "允许以下地址使用此 Mac 的本地工具和已选文件。请仅批准您自己发起的连接。",
+    "zh-TW": "允許以下地址使用此 Mac 的本地工具和已選檔案。請僅批准您自己發起的連線。"
+  },
+  "연결 허용": {
+    "en": "Allow connection",
+    "vi": "Cho phép kết nối",
+    "ja": "接続を許可",
+    "zh": "允许连接",
+    "ko": "연결 허용",
+    "zh-CN": "允许连接",
+    "zh-TW": "允許連線"
+  },
+  "거절": {
+    "en": "Decline",
+    "vi": "Từ chối",
+    "ja": "拒否",
+    "zh": "拒绝",
+    "ko": "거절",
+    "zh-CN": "拒绝",
+    "zh-TW": "拒絕"
+  },
+  "일시정지": {
+    "en": "Pause",
+    "vi": "Tạm dừng",
+    "ja": "一時停止",
+    "zh": "暂停",
+    "ko": "일시정지",
+    "zh-CN": "暂停",
+    "zh-TW": "暫停"
+  },
+  "녹화 재개": {
+    "en": "Resume recording",
+    "vi": "Tiếp tục ghi",
+    "ja": "録画を再開",
+    "zh": "继续录制",
+    "ko": "녹화 재개",
+    "zh-CN": "继续录制",
+    "zh-TW": "繼續錄製"
+  },
+  "● 일시정지 ": {
+    "en": "● Paused ",
+    "vi": "● Tạm dừng ",
+    "ja": "● 一時停止 ",
+    "zh": "● 已暂停 ",
+    "ko": "● 일시정지 ",
+    "zh-CN": "● 已暂停 ",
+    "zh-TW": "● 已暫停 "
+  },
+  "FPS는 5–60, 배율은 10–100% 범위로 입력하세요.": {
+    "en": "Use 5–60 fps and 10–100% scale.",
+    "vi": "Nhập 5–60 fps và tỷ lệ 10–100%.",
+    "ja": "FPSは5〜60、倍率は10〜100%にしてください。",
+    "zh": "请输入5–60 fps和10–100%的缩放。",
+    "ko": "FPS는 5–60, 배율은 10–100% 범위로 입력하세요.",
+    "zh-CN": "请输入5–60 fps和10–100%的缩放。",
+    "zh-TW": "請輸入5–60 fps和10–100%的縮放。"
+  },
+  "MP4 (H.264), 5–60fps. 원본보다 크게 확대하지 않습니다. 시스템 오디오는 앱 단위로 캡처하며 이 앱의 창과 소리는 제외됩니다. 마이크는 macOS 15 이상에서 지원됩니다.": {
+    "en": "MP4 (H.264), 5–60 fps. No upscaling. System audio includes the selected app, excluding GalaxyControl. Microphone needs macOS 15+.",
+    "vi": "MP4 (H.264), 5–60 fps. Không phóng lớn hơn bản gốc. Âm thanh hệ thống từ ứng dụng được chọn, không gồm GalaxyControl. Mic cần macOS 15+.",
+    "ja": "MP4 (H.264)、5〜60fps。元のサイズを超えて拡大しません。選択したアプリの音声を録音し、GalaxyControlは除外します。マイクにはmacOS 15以降が必要です。",
+    "zh": "MP4 (H.264)，5–60 fps，不放大原始尺寸。系统音频来自所选应用，排除GalaxyControl。麦克风需要macOS 15及以上。",
+    "ko": "MP4 (H.264), 5–60fps. 원본보다 크게 확대하지 않습니다. 시스템 오디오는 앱 단위로 캡처하며 이 앱의 창과 소리는 제외됩니다. 마이크는 macOS 15 이상에서 지원됩니다.",
+    "zh-CN": "MP4 (H.264)，5–60 fps，不放大原始尺寸。系统音频来自所选应用，排除GalaxyControl。麦克风需要macOS 15及以上。",
+    "zh-TW": "MP4 (H.264)，5–60 fps，不放大原始尺寸。系統音訊來自所選應用，排除GalaxyControl。麥克風需要macOS 15及以上。"
+  },
+  "● 녹화 중 · %d × %d 픽셀 · %d fps": {
+    "en": "● Recording · %d × %d pixels · %d fps",
+    "vi": "● Đang ghi · %d × %d pixel · %d fps",
+    "ja": "● 録画中 · %d × %dピクセル · %d fps",
+    "zh": "● 正在录制 · %d × %d像素 · %d fps",
+    "ko": "● 녹화 중 · %d × %d 픽셀 · %d fps",
+    "zh-CN": "● 正在录制 · %d × %d像素 · %d fps",
+    "zh-TW": "● 正在錄製 · %d × %d畫素 · %d fps"
+  },
+  "녹화 상태를 변경하지 못했습니다.": {
+    "en": "Could not change recording state.",
+    "vi": "Không thể đổi trạng thái ghi.",
+    "ja": "録画の状態を変更できませんでした。",
+    "zh": "无法更改录制状态。",
+    "ko": "녹화 상태를 변경하지 못했습니다.",
+    "zh-CN": "无法更改录制状态。",
+    "zh-TW": "無法更改錄製狀態。"
+  },
+  "녹화 시간을 조정하지 못했습니다.": {
+    "en": "Could not adjust recording timestamps.",
+    "vi": "Không thể điều chỉnh thời gian ghi.",
+    "ja": "録画の時刻を調整できませんでした。",
+    "zh": "无法调整录制时间。",
+    "ko": "녹화 시간을 조정하지 못했습니다.",
+    "zh-CN": "无法调整录制时间。",
+    "zh-TW": "無法調整錄製時間。"
+  },
+  "녹화할 창을 선택하세요.": {
+    "en": "Choose a window to record.",
+    "vi": "Chọn cửa sổ để ghi.",
+    "ja": "録画するウィンドウを選んでください。",
+    "zh": "选择要录制的窗口。",
+    "ko": "녹화할 창을 선택하세요.",
+    "zh-CN": "选择要录制的窗口。",
+    "zh-TW": "選擇要錄製的視窗。"
+  },
+  "마이크": {
+    "en": "Microphone",
+    "vi": "Micrô",
+    "ja": "マイク",
+    "zh": "麦克风",
+    "ko": "마이크",
+    "zh-CN": "麦克风",
+    "zh-TW": "麥克風"
+  },
+  "마이크 권한이 필요합니다.": {
+    "en": "Microphone permission required.",
+    "vi": "Cần quyền micrô.",
+    "ja": "マイクの許可が必要です。",
+    "zh": "需要麦克风权限。",
+    "ko": "마이크 권한이 필요합니다.",
+    "zh-CN": "需要麦克风权限。",
+    "zh-TW": "需要麥克風許可權。"
+  },
+  "마이크 녹화는 macOS 15 이상에서 지원됩니다.": {
+    "en": "Microphone recording needs macOS 15+.",
+    "vi": "Ghi micrô cần macOS 15 trở lên.",
+    "ja": "マイク録音にはmacOS 15以降が必要です。",
+    "zh": "麦克风录音需要macOS 15及以上。",
+    "ko": "마이크 녹화는 macOS 15 이상에서 지원됩니다.",
+    "zh-CN": "麦克风录音需要macOS 15及以上。",
+    "zh-TW": "麥克風錄音需要macOS 15及以上。"
+  },
+  "마이크와 시스템 오디오를 합치지 못했습니다. 원본 임시 파일을 보존했습니다: %@": {
+    "en": "Could not mix microphone and system audio. Original temporary file kept: %@",
+    "vi": "Không thể trộn micrô và âm thanh hệ thống. Đã giữ tệp tạm gốc: %@",
+    "ja": "マイクとシステム音声を合成できませんでした。元の一時ファイルを保持しました: %@",
+    "zh": "无法混合麦克风和系统音频，已保留原始临时文件：%@",
+    "ko": "마이크와 시스템 오디오를 합치지 못했습니다. 원본 임시 파일을 보존했습니다: %@",
+    "zh-CN": "无法混合麦克风和系统音频，已保留原始临时文件：%@",
+    "zh-TW": "無法混合麥克風和系統音訊，已保留原始臨時檔案：%@"
+  },
+  "모니터와 녹화 범위를 선택하세요. MP4 영상과 선택한 오디오를 저장합니다.": {
+    "en": "Choose a display and recording area. Saves MP4 with selected audio.",
+    "vi": "Chọn màn hình và vùng ghi. Lưu MP4 với âm thanh đã chọn.",
+    "ja": "ディスプレイと録画範囲を選択してください。選択した音声を含むMP4を保存します。",
+    "zh": "选择显示器和录制区域，保存包含所选音频的MP4。",
+    "ko": "모니터와 녹화 범위를 선택하세요. MP4 영상과 선택한 오디오를 저장합니다.",
+    "zh-CN": "选择显示器和录制区域，保存包含所选音频的MP4。",
+    "zh-TW": "選擇顯示器和錄製區域，儲存包含所選音訊的MP4。"
+  },
+  "선택한 창": {
+    "en": "Selected window",
+    "vi": "Cửa sổ đã chọn",
+    "ja": "選択したウィンドウ",
+    "zh": "所选窗口",
+    "ko": "선택한 창",
+    "zh-CN": "所选窗口",
+    "zh-TW": "所選視窗"
+  },
+  "선택한 창만 MP4로 저장합니다. 시스템 오디오를 켜면 해당 앱의 소리가 포함됩니다.": {
+    "en": "Records the selected window as MP4. System audio includes that app.",
+    "vi": "Ghi cửa sổ đã chọn thành MP4. Âm thanh hệ thống gồm âm thanh ứng dụng đó.",
+    "ja": "選択したウィンドウをMP4で録画します。システム音声を有効にするとそのアプリの音声を含みます。",
+    "zh": "将所选窗口录制为MP4，启用系统音频后包含该应用的声音。",
+    "ko": "선택한 창만 MP4로 저장합니다. 시스템 오디오를 켜면 해당 앱의 소리가 포함됩니다.",
+    "zh-CN": "将所选窗口录制为MP4，启用系统音频后包含该应用的声音。",
+    "zh-TW": "將所選視窗錄製為MP4，啟用系統音訊後包含該應用的聲音。"
+  },
+  "시스템 오디오": {
+    "en": "System audio",
+    "vi": "Âm thanh hệ thống",
+    "ja": "システム音声",
+    "zh": "系统音频",
+    "ko": "시스템 오디오",
+    "zh-CN": "系统音频",
+    "zh-TW": "系統音訊"
+  },
+  "앱에 마이크 권한 설명이 없습니다. 업데이트한 앱을 사용하세요.": {
+    "en": "Microphone permission description missing. Update the app.",
+    "vi": "Thiếu mô tả quyền micrô. Hãy cập nhật ứng dụng.",
+    "ja": "マイクの許可説明がありません。アプリを更新してください。",
+    "zh": "缺少麦克风权限说明，请更新应用。",
+    "ko": "앱에 마이크 권한 설명이 없습니다. 업데이트한 앱을 사용하세요.",
+    "zh-CN": "缺少麦克风权限说明，请更新应用。",
+    "zh-TW": "缺少麥克風許可權說明，請更新應用。"
+  },
+  "영상 또는 오디오를 저장하지 못했습니다.": {
+    "en": "Could not save video or audio.",
+    "vi": "Không thể lưu video hoặc âm thanh.",
+    "ja": "映像または音声を保存できませんでした。",
+    "zh": "无法保存视频或音频。",
+    "ko": "영상 또는 오디오를 저장하지 못했습니다.",
+    "zh-CN": "无法保存视频或音频。",
+    "zh-TW": "無法儲存影片或音訊。"
+  },
+  "오디오를 MP4에 저장할 수 없습니다.": {
+    "en": "Could not write audio to MP4.",
+    "vi": "Không thể ghi âm thanh vào MP4.",
+    "ja": "MP4に音声を保存できません。",
+    "zh": "无法将音频写入MP4。",
+    "ko": "오디오를 MP4에 저장할 수 없습니다.",
+    "zh-CN": "无法将音频写入MP4。",
+    "zh-TW": "無法將音訊寫入MP4。"
+  },
+  "요청한 오디오 샘플을 받지 못했습니다. 원본 임시 파일을 보존했습니다.": {
+    "en": "Requested audio was not received. Original temporary file kept.",
+    "vi": "Không nhận được âm thanh yêu cầu. Đã giữ tệp tạm gốc.",
+    "ja": "要求した音声を取得できませんでした。元の一時ファイルを保持しました。",
+    "zh": "未收到请求的音频，已保留原始临时文件。",
+    "ko": "요청한 오디오 샘플을 받지 못했습니다. 원본 임시 파일을 보존했습니다.",
+    "zh-CN": "未收到请求的音频，已保留原始临时文件。",
+    "zh-TW": "未收到請求的音訊，已保留原始臨時檔案。"
+  },
+  "원본 배율 (%)": {
+    "en": "Original scale (%)",
+    "vi": "Tỷ lệ bản gốc (%)",
+    "ja": "元の倍率 (%)",
+    "zh": "原始缩放 (%)",
+    "ko": "원본 배율 (%)",
+    "zh-CN": "原始缩放 (%)",
+    "zh-TW": "原始縮放 (%)"
+  },
+  "원본 해상도": {
+    "en": "Original resolution",
+    "vi": "Độ phân giải gốc",
+    "ja": "元の解像度",
+    "zh": "原始分辨率",
+    "ko": "원본 해상도",
+    "zh-CN": "原始分辨率",
+    "zh-TW": "原始解析度"
+  },
+  "제목 없는 창": {
+    "en": "Untitled window",
+    "vi": "Cửa sổ không tên",
+    "ja": "無題のウィンドウ",
+    "zh": "未命名窗口",
+    "ko": "제목 없는 창",
+    "zh-CN": "未命名窗口",
+    "zh-TW": "未命名視窗"
+  },
+  "창 선택을 취소했습니다.": {
+    "en": "Window selection cancelled.",
+    "vi": "Đã hủy chọn cửa sổ.",
+    "ja": "ウィンドウの選択をキャンセルしました。",
+    "zh": "已取消窗口选择。",
+    "ko": "창 선택을 취소했습니다.",
+    "zh-CN": "已取消窗口选择。",
+    "zh-TW": "已取消視窗選擇。"
+  },
+  "녹화 일시정지 · 정지 구간은 저장 영상에서 제외됩니다.": {
+    "en": "Recording paused. Paused time is excluded.",
+    "vi": "Đã tạm dừng. Thời gian dừng không có trong video.",
+    "ja": "録画を一時停止しました。停止時間は動画に含めません。",
+    "zh": "录制已暂停，暂停时间不计入视频。",
+    "ko": "녹화 일시정지 · 정지 구간은 저장 영상에서 제외됩니다.",
+    "zh-CN": "录制已暂停，暂停时间不计入视频。",
+    "zh-TW": "錄製已暫停，暫停時間不計入影片。"
+  },
+  "● 녹화 재개": {
+    "en": "● Recording resumed",
+    "vi": "● Đã tiếp tục ghi",
+    "ja": "● 録画を再開",
+    "zh": "● 已继续录制",
+    "ko": "● 녹화 재개",
+    "zh-CN": "● 已继续录制",
+    "zh-TW": "● 已繼續錄製"
+  },
+  "GalaxyControl 열기": {
+    "en": "Open GalaxyControl",
+    "vi": "Mở GalaxyControl",
+    "ja": "GalaxyControl を開く",
+    "zh": "打开 GalaxyControl",
+    "ko": "GalaxyControl 열기",
+    "zh-CN": "打开 GalaxyControl",
+    "zh-TW": "開啟 GalaxyControl"
+  },
+  "추가 도구": {
+    "en": "More tools",
+    "vi": "Thêm công cụ",
+    "ja": "追加のツール",
+    "zh": "更多工具",
+    "ko": "추가 도구",
+    "zh-CN": "更多工具",
+    "zh-TW": "更多工具"
+  },
+  "GalaxyControl을 여는 중입니다…": {
+    "en": "Opening GalaxyControl…",
+    "vi": "Đang mở GalaxyControl…",
+    "ja": "GalaxyControl を開いています…",
+    "zh": "正在打开 GalaxyControl…",
+    "ko": "GalaxyControl을 여는 중입니다…",
+    "zh-CN": "正在打开 GalaxyControl…",
+    "zh-TW": "正在開啟 GalaxyControl…"
+  },
+  "프로그램 폴더를 준비하지 못했습니다. 다시 실행하세요.": {
+    "en": "Cannot prepare the app folder. Restart the app.",
+    "vi": "Không thể chuẩn bị thư mục ứng dụng. Hãy khởi động lại.",
+    "ja": "アプリのフォルダーを準備できません。再起動してください。",
+    "zh": "无法准备应用文件夹。请重新启动。",
+    "ko": "프로그램 폴더를 준비하지 못했습니다. 다시 실행하세요.",
+    "zh-CN": "无法准备应用文件夹。请重新启动。",
+    "zh-TW": "無法準備應用資料夾。請重新啟動。"
+  },
+  "처리 구성요소가 없습니다. 프로그램 폴더 전체를 다시 설치하세요.": {
+    "en": "Processing components are missing. Reinstall the complete app.",
+    "vi": "Thiếu thành phần xử lý. Hãy cài lại toàn bộ ứng dụng.",
+    "ja": "処理用のファイルがありません。アプリ全体を再インストールしてください。",
+    "zh": "缺少处理组件。请重新安装完整应用。",
+    "ko": "처리 구성요소가 없습니다. 프로그램 폴더 전체를 다시 설치하세요.",
+    "zh-CN": "缺少处理组件。请重新安装完整应用。",
+    "zh-TW": "缺少處理元件。請重新安裝完整應用。"
+  },
+  "처리가 중단되었습니다. 다시 연결하세요.": {
+    "en": "Processing stopped. Reconnect.",
+    "vi": "Xử lý đã dừng. Hãy kết nối lại.",
+    "ja": "処理が停止しました。再接続してください。",
+    "zh": "处理已停止。请重新连接。",
+    "ko": "처리가 중단되었습니다. 다시 연결하세요.",
+    "zh-CN": "处理已停止。请重新连接。",
+    "zh-TW": "處理已停止。請重新連線。"
+  },
+  "프로그램을 준비하는 중입니다. 잠시 기다려 주세요.": {
+    "en": "Preparing the app. Please wait.",
+    "vi": "Đang chuẩn bị ứng dụng. Vui lòng chờ.",
+    "ja": "アプリを準備しています。お待ちください。",
+    "zh": "正在准备应用。请稍候。",
+    "ko": "프로그램을 준비하는 중입니다. 잠시 기다려 주세요.",
+    "zh-CN": "正在准备应用。请稍候。",
+    "zh-TW": "正在準備應用。請稍候。"
+  },
+  "화면을 열지 못했습니다. 다시 연결하세요.": {
+    "en": "Cannot open this view. Reconnect.",
+    "vi": "Không thể mở màn hình này. Hãy kết nối lại.",
+    "ja": "画面を開けません。再接続してください。",
+    "zh": "无法打开界面。请重新连接。",
+    "ko": "화면을 열지 못했습니다. 다시 연결하세요.",
+    "zh-CN": "无法打开界面。请重新连接。",
+    "zh-TW": "無法開啟介面。請重新連線。"
+  }
+}

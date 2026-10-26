@@ -1,0 +1,14 @@
+{
+  "model": "gpt-6-luna",
+  "reasoning": "low",
+  "verifiedReasoning": ["none", "low", "medium"],
+  "revision": "2026-10-24",
+  "imageTranslation": {
+    "model": "gpt-6.1-sol",
+    "reasoning": "medium",
+    "revision": "2026-10-24",
+    "selection": "User requested GPT-6.1 Sol for image translation. Require this model in the connected account catalog; never silently substitute another model.",
+    "liveVerified": false
+  },
+  "benchmark": "2026-10-13: compact conversation prompt, account vision verified; final same-image test 3 samples/effort: low mean 4.704s, none 6.237s, medium 6.399s. All kept sender/body and omitted chat UI. Small O/Q and punctuation remain uncertain at every effort. Document numbers/headings preserved at all levels. See RELEASE-4.4.3-검증보고.md. Re-evaluate future models before changing this policy."
+}

@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Bogo Tools Web Capture"
+  },
+  "description": {
+    "message": "現在のページを撮影し、ローカルツールで編集します。"
+  },
+  "capture": {
+    "message": "現在のページを撮影"
+  }
+}

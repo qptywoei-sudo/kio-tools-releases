@@ -1,0 +1,37 @@
+/* The photo owns the workspace. Tool properties float without taking a second row. */
+.gc-canvas-editor.gc-canvas-editor{--canvas-gap:5px}
+.gc-canvas-editor.gc-canvas-editor .lt-canvas-toolbar{gap:3px;padding:5px;margin:0 0 5px;border-radius:9px;position:relative;flex-wrap:wrap}
+.gc-canvas-editor.gc-canvas-editor .lt-canvas-toolbar .lt-button{min-height:32px;height:32px;min-width:32px;width:32px;padding:5px;flex:0 0 auto;border-radius:7px;gap:0}
+.gc-canvas-editor.gc-canvas-editor .gc-editor-tool span{display:none}
+.gc-canvas-editor.gc-canvas-editor .gc-editor-export{gap:3px;margin-left:auto;flex-wrap:nowrap}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-view-controls{gap:2px;margin:0 0 0 auto;font-size:10px;white-space:nowrap;flex-wrap:nowrap}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-view-controls output{min-width:34px;text-align:center;line-height:1;color:var(--color-text-muted)}
+.gc-canvas-editor.gc-canvas-editor .gc-editor-export{margin-left:5px}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-surface{position:relative;min-height:220px;flex:1;display:flex;overflow:hidden;border:1px solid var(--color-border);border-radius:8px;background:var(--color-surface-muted,var(--color-surface))}
+.gc-canvas-editor.gc-canvas-editor .lt-canvas-wrap{flex:1;width:100%;height:min(64vh,720px);min-height:0;max-height:none;padding:4px;border:0;border-radius:0;background:transparent;overflow:auto;overscroll-behavior:contain}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-stage{position:relative;min-width:0;min-height:0;max-width:none;display:block;margin:auto;flex:none;background:transparent;box-shadow:0 1px 9px #0002}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-stage .lt-canvas{margin:0;box-shadow:none}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float{position:absolute;display:flex;align-items:center;gap:4px;padding:3px 5px 3px 2px;max-width:calc(100% - 12px);min-height:29px;border:1px solid var(--color-border);border-radius:8px;background:var(--color-surface);box-shadow:0 2px 9px #0002;z-index:4;flex-wrap:wrap}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float[hidden]{display:none}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float{width:max-content;z-index:8}
+.gc-canvas-editor.gc-canvas-editor .gc-float-handle{display:grid;place-items:center;flex:0 0 16px;min-height:22px;min-width:16px;padding:0;border:0;border-radius:4px;background:transparent;color:var(--color-text-muted);cursor:grab;touch-action:none;user-select:none}
+.gc-canvas-editor.gc-canvas-editor .gc-float-handle:hover,.gc-canvas-editor.gc-canvas-editor .gc-float-handle:focus-visible{background:var(--color-primary-soft);color:var(--color-text)}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float.dragging .gc-float-handle{cursor:grabbing}
+.gc-canvas-editor.gc-canvas-editor .gc-float-brush output{font-size:10px;min-width:12px;text-align:center;font-variant-numeric:tabular-nums}
+.gc-canvas-editor.gc-canvas-editor .gc-float-crop-size{font-size:10px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float label{display:flex;gap:3px;align-items:center;margin:0;font-size:10px;color:var(--color-text-muted)}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float input{font:inherit;min-height:22px;height:22px;padding:2px 4px;border:1px solid var(--color-border);border-radius:5px;background:var(--color-background);color:var(--color-text)}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float input[type=color]{padding:1px;width:23px;border-radius:5px;cursor:pointer}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float input[type=number]{width:43px}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float input[type=range]{width:48px;padding:0;border:0;accent-color:var(--kio-yellow,var(--color-primary));height:18px}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float input[type=checkbox]{width:13px;min-height:13px;height:13px;accent-color:var(--kio-yellow,var(--color-primary))}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float .lt-button{height:23px;min-height:23px;min-width:23px;width:23px;padding:3px;border-radius:5px}
+.gc-canvas-editor.gc-canvas-editor .gc-canvas-float-hint{font-size:10px;color:var(--color-text-muted)}
+.gc-canvas-editor.gc-canvas-editor .gc-inline-text{position:absolute;z-index:3;box-sizing:border-box;display:block;margin:0;padding:2px;border:1px dashed var(--kio-yellow,#FFE7D4);outline:1px solid #24252199;border-radius:0;resize:none;overflow:hidden;font-family:sans-serif;line-height:1.25;white-space:pre;box-shadow:0 1px 6px #0002;min-width:0;min-height:0}
+.gc-canvas-editor.gc-canvas-editor .gc-inline-text::placeholder{color:currentColor;opacity:.65}
+.gc-capture-workspace .gc-canvas-editor.gc-canvas-editor{padding:5px 7px}
+.gc-capture-workspace .gc-capture-header span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.gc-capture-workspace .gc-canvas-editor.gc-canvas-editor .gc-canvas-surface{min-height:0}
+.gc-capture-workspace .gc-canvas-editor.gc-canvas-editor .lt-canvas-wrap{height:auto}
+.gc-canvas-editor.gc-canvas-editor .lt-layer-panel{font-size:10px}
+@media(max-width:650px){.gc-canvas-editor.gc-canvas-editor .lt-canvas-toolbar{gap:2px}.gc-canvas-editor.gc-canvas-editor .lt-canvas-toolbar .lt-button{width:29px;min-width:29px;height:30px;min-height:30px}.gc-canvas-editor.gc-canvas-editor .gc-canvas-view-controls{margin-left:0}.gc-canvas-editor.gc-canvas-editor .gc-editor-export{margin-left:auto}}

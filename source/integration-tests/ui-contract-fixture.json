@@ -1,0 +1,99 @@
+{
+  "producer": "production normalizeCanvasLayer + QR taskOptions; explicit canvas API dimensions/pages supplied by Python fixture",
+  "taskOptions": {
+    "canvas_export": {},
+    "code_generate": {
+      "kind": "qr",
+      "text": "",
+      "format": "png",
+      "style": "square",
+      "size": 512,
+      "foreground": "#111827",
+      "background": "#ffffff"
+    }
+  },
+  "draw": {
+    "type": "draw",
+    "x": 17,
+    "y": 17,
+    "width": 76,
+    "height": 56,
+    "points": [
+      [
+        3,
+        3
+      ],
+      [
+        43,
+        23
+      ],
+      [
+        73,
+        53
+      ]
+    ],
+    "color": "#ff0000",
+    "fill": "none",
+    "lineWidth": 6
+  },
+  "line": {
+    "type": "line",
+    "x": 17,
+    "y": 47,
+    "width": 85,
+    "height": 6,
+    "points": [
+      [
+        3,
+        3
+      ],
+      [
+        43,
+        3
+      ],
+      [
+        82,
+        3
+      ]
+    ],
+    "color": "#ff0000",
+    "fill": "none",
+    "lineWidth": 6
+  },
+  "arrow": {
+    "type": "arrow",
+    "x": 17,
+    "y": 47,
+    "width": 86,
+    "height": 6,
+    "points": [
+      [
+        3,
+        3
+      ],
+      [
+        83,
+        3
+      ]
+    ],
+    "color": "#ff0000",
+    "fill": "none",
+    "lineWidth": 6
+  },
+  "dot": {
+    "type": "draw",
+    "x": 17,
+    "y": 17,
+    "width": 6,
+    "height": 6,
+    "points": [
+      [
+        3,
+        3
+      ]
+    ],
+    "color": "#ff0000",
+    "fill": "none",
+    "lineWidth": 6
+  }
+}

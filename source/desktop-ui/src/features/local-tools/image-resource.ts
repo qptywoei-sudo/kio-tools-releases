@@ -1,0 +1,3 @@
+export type ToolImage=ImageBitmap|(HTMLImageElement&{close:()=>void});
+// Older embedded WebKit versions may lack createImageBitmap or reject a supported image Blob.
+export async function decodeToolImage(blob:Blob):Promise<ToolImage>{if(typeof createImageBitmap==='function'){try{return await createImageBitmap(blob);}catch{/* Fall through to WebKit's HTML image decoder. */}}return new Promise((resolve,reject)=>{const url=URL.createObjectURL(blob),image=new Image() as HTMLImageElement&{close:()=>void};image.close=()=>{image.src='';URL.revokeObjectURL(url);};image.onload=()=>resolve(image);image.onerror=()=>{image.close();reject(Error('processingFailed'));};image.src=url;});}

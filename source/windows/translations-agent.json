@@ -1,0 +1,188 @@
+{
+  "통합 도구": {
+    "en": "Unified tools",
+    "vi": "Công cụ hợp nhất",
+    "ja": "統合ツール",
+    "zh": "统一工具"
+  },
+  "통합 도구 열기": {
+    "en": "Open unified tools",
+    "vi": "Mở công cụ hợp nhất",
+    "ja": "統合ツールを開く",
+    "zh": "打开统一工具"
+  },
+  "기존 Windows 도구": {
+    "en": "Classic Windows tools",
+    "vi": "Công cụ Windows hiện có",
+    "ja": "従来の Windows ツール",
+    "zh": "现有 Windows 工具"
+  },
+  "브라우저에서 열기": {
+    "en": "Open in browser",
+    "vi": "Mở trong trình duyệt",
+    "ja": "ブラウザーで開く",
+    "zh": "在浏览器中打开"
+  },
+  "통합 도구를 여는 중입니다…": {
+    "en": "Opening unified tools…",
+    "vi": "Đang mở công cụ hợp nhất…",
+    "ja": "統合ツールを開いています…",
+    "zh": "正在打开统一工具…"
+  },
+  "이 컴퓨터에서는 브라우저로 통합 도구를 열 수 있습니다. 기존 Windows 도구도 계속 사용할 수 있습니다.": {
+    "en": "You can open unified tools in your browser on this computer. Classic Windows tools remain available.",
+    "vi": "Bạn có thể mở công cụ hợp nhất bằng trình duyệt trên máy tính này. Các công cụ Windows hiện có vẫn dùng được.",
+    "ja": "このパソコンではブラウザーで統合ツールを開けます。従来の Windows ツールも引き続き使えます。",
+    "zh": "这台电脑可在浏览器中打开统一工具，现有 Windows 工具仍可继续使用。"
+  },
+  "저장할 폴더 선택": {
+    "en": "Choose save folder",
+    "vi": "Chọn thư mục lưu",
+    "ja": "保存先フォルダーを選択",
+    "zh": "选择保存文件夹"
+  },
+  "찾을 폴더 선택": {
+    "en": "Choose folder to search",
+    "vi": "Chọn thư mục để tìm kiếm",
+    "ja": "検索するフォルダーを選択",
+    "zh": "选择搜索文件夹"
+  },
+  "이 도구 화면이 이 컴퓨터의 파일과 캡처 기능을 사용하도록 허용할까요?": {
+    "en": "Allow this tools page to use files and capture features on this computer?",
+    "vi": "Cho phép trang công cụ này dùng tệp và tính năng chụp màn hình trên máy tính này?",
+    "ja": "このツール画面に、このパソコンのファイルと画面キャプチャ機能の使用を許可しますか？",
+    "zh": "允许此工具页面使用这台电脑的文件和截图功能吗？"
+  },
+  "로컬 도구 연결 승인": {
+    "en": "Approve local tools connection",
+    "vi": "Cho phép kết nối công cụ cục bộ",
+    "ja": "ローカルツール接続の承認",
+    "zh": "批准本地工具连接"
+  },
+  "Windows에서는 별도 화면 기록 승인을 켤 필요가 없습니다. 회사 보안 정책으로 캡처가 차단되면 관리자에게 확인하세요. 파일 접근은 폴더 선택 창에서 직접 허용합니다.": {
+    "en": "Windows does not require a separate screen recording permission. If company security policies block capture, contact your administrator. Allow file access directly in the folder picker.",
+    "vi": "Windows không yêu cầu bật quyền ghi màn hình riêng. Nếu chính sách bảo mật công ty chặn chụp màn hình, hãy hỏi quản trị viên. Bạn cho phép truy cập tệp trực tiếp trong cửa sổ chọn thư mục.",
+    "ja": "Windows では別途画面収録の許可を有効にする必要はありません。会社のセキュリティポリシーでキャプチャが制限される場合は管理者に確認してください。ファイルへのアクセスはフォルダー選択画面で許可します。",
+    "zh": "Windows 无需另外开启屏幕录制权限。如果公司安全策略阻止截图，请联系管理员。文件访问由您在文件夹选择窗口中直接授权。"
+  },
+  "Windows 권한": {
+    "en": "Windows permissions",
+    "vi": "Quyền Windows",
+    "ja": "Windows のアクセス許可",
+    "zh": "Windows 权限"
+  },
+  "통합 도구의 실행 파일을 찾지 못했습니다. 폴더 전체를 복사했는지 확인하세요. 기존 도구는 계속 사용할 수 있습니다.": {
+    "en": "The unified tools runtime could not be found. Check that you copied the entire folder. Classic tools remain available.",
+    "vi": "Không tìm thấy tệp chạy công cụ hợp nhất. Hãy kiểm tra bạn đã sao chép toàn bộ thư mục. Các công cụ hiện có vẫn dùng được.",
+    "ja": "統合ツールの実行ファイルが見つかりません。フォルダー全体をコピーしたか確認してください。従来のツールは引き続き使えます。",
+    "zh": "找不到统一工具的运行文件。请确认已复制整个文件夹。现有工具仍可继续使用。"
+  },
+  "로컬 연결 준비를 완료하지 못했습니다. 사용자 폴더의 접근 권한을 확인하세요. 기존 도구는 계속 사용할 수 있습니다.": {
+    "en": "Local connection setup could not be completed. Check access permissions for your user folder. Classic tools remain available.",
+    "vi": "Không thể hoàn tất chuẩn bị kết nối cục bộ. Hãy kiểm tra quyền truy cập thư mục người dùng. Các công cụ hiện có vẫn dùng được.",
+    "ja": "ローカル接続の準備を完了できませんでした。ユーザーフォルダーのアクセス許可を確認してください。従来のツールは引き続き使えます。",
+    "zh": "无法完成本地连接准备。请检查用户文件夹的访问权限。现有工具仍可继续使用。"
+  },
+  "이 창 선택": {
+    "en": "Select this window",
+    "vi": "Chọn cửa sổ này",
+    "ja": "このウィンドウを選択",
+    "zh": "选择此窗口"
+  },
+  "캡처할 창 선택": {
+    "en": "Choose window to capture",
+    "vi": "Chọn cửa sổ để chụp",
+    "ja": "キャプチャするウィンドウを選択",
+    "zh": "选择要截取的窗口"
+  },
+  "모든 파일": {
+    "en": "All files",
+    "vi": "Mọi tệp",
+    "ja": "すべてのファイル",
+    "zh": "所有文件"
+  },
+  "동영상": {
+    "en": "Video",
+    "vi": "Video",
+    "ja": "動画",
+    "zh": "视频"
+  },
+  "파일": {
+    "en": "Files",
+    "vi": "Tệp",
+    "ja": "ファイル",
+    "zh": "文件"
+  },
+  "통합 도구: 상단 버튼이나 트레이에서 ADMIN 카드 화면을 여세요. 이 컴퓨터의 앱에서 처음 연결을 승인한 화면만 파일·캡처 기능을 사용할 수 있습니다. WebView2가 없으면 기본 브라우저에서 같은 화면이 열립니다. 기존 Windows 도구는 별도 버튼으로 계속 사용할 수 있습니다.\r\n\r\n": {
+    "en": "Unified tools: Open the ADMIN cards from the top button or tray. Only pages whose first connection you approved in this computer’s app can use files and capture features. If WebView2 is unavailable, the same page opens in your default browser. Classic Windows tools remain available from their button.\r\n\r\n",
+    "vi": "Công cụ hợp nhất: Mở màn hình thẻ ADMIN bằng nút phía trên hoặc biểu tượng khay. Chỉ trang được bạn cho phép kết nối lần đầu trong ứng dụng trên máy này mới dùng được tệp và chụp màn hình. Nếu không có WebView2, trang sẽ mở trong trình duyệt mặc định. Nút riêng vẫn mở các công cụ Windows hiện có.\r\n\r\n",
+    "ja": "統合ツール: 上部のボタンまたはトレイから ADMIN のカード画面を開きます。このパソコンのアプリで初回接続を承認した画面だけが、ファイルやキャプチャ機能を使えます。WebView2 がない場合は同じ画面が既定のブラウザーで開きます。専用ボタンから従来の Windows ツールも引き続き使えます。\r\n\r\n",
+    "zh": "统一工具：从顶部按钮或托盘打开 ADMIN 卡片界面。只有在这台电脑的应用中获准首次连接的页面，才可使用文件和截图功能。没有 WebView2 时，同一页面会在默认浏览器中打开。现有 Windows 工具仍可通过专用按钮使用。\r\n\r\n"
+  },
+  "이전 GalaxyControl이 실행 중입니다. 트레이에서 완전히 종료한 뒤 새 앱을 여세요.": {
+    "en": "An older GalaxyControl is running. Quit it completely from the tray, then open the new app.",
+    "vi": "GalaxyControl phiên bản cũ đang chạy. Hãy thoát hoàn toàn từ khay hệ thống rồi mở ứng dụng mới.",
+    "ja": "以前の GalaxyControl が実行中です。トレイから完全に終了してから、新しいアプリを開いてください。",
+    "zh": "旧版 GalaxyControl 正在运行。请从托盘完全退出后，再打开新应用。"
+  },
+  "통합 도구를 시작하지 못했습니다. 폴더 전체를 복사했는지, 다른 앱이 로컬 연결을 사용 중인지 확인하세요. 기존 도구는 계속 사용할 수 있습니다.": {
+    "en": "Unified tools could not start. Check that you copied the entire folder and that another app is not using the local connection. Classic tools remain available.",
+    "vi": "Không thể khởi động công cụ hợp nhất. Hãy kiểm tra đã sao chép toàn bộ thư mục và không có ứng dụng khác dùng kết nối cục bộ. Các công cụ hiện có vẫn dùng được.",
+    "ja": "統合ツールを起動できませんでした。フォルダー全体をコピーしたか、別のアプリがローカル接続を使用していないか確認してください。従来のツールは引き続き使えます。",
+    "zh": "无法启动统一工具。请确认已复制整个文件夹，并检查是否有其他应用正在使用本地连接。现有工具仍可继续使用。"
+  },
+  "프로그램 화면을 열지 못했습니다. 다시 시도해 주세요.": {
+    "en": "Could not open the app. Try again.",
+    "vi": "Không mở được ứng dụng. Hãy thử lại.",
+    "ja": "アプリを開けませんでした。もう一度お試しください。",
+    "zh": "无法打开应用，请重试。"
+  },
+  "프로그램 연결을 준비하지 못했습니다. 다시 시도해 주세요.": {
+    "en": "Could not prepare the app connection. Try again.",
+    "vi": "Không chuẩn bị được kết nối ứng dụng. Hãy thử lại.",
+    "ja": "アプリの接続を準備できませんでした。もう一度お試しください。",
+    "zh": "无法准备应用连接，请重试。"
+  },
+  "프로그램 구성 파일이 없습니다. GalaxyControl 폴더 전체를 다시 설치해 주세요.": {
+    "en": "App files are missing. Reinstall the complete GalaxyControl folder.",
+    "vi": "Thiếu tệp ứng dụng. Hãy cài lại toàn bộ thư mục GalaxyControl.",
+    "ja": "アプリのファイルがありません。GalaxyControl フォルダー全体を再インストールしてください。",
+    "zh": "缺少应用文件，请重新安装完整的 GalaxyControl 文件夹。"
+  },
+  "이 프로그램을 사용하려면 Microsoft WebView2 런타임이 필요합니다. 설치 후 다시 시도해 주세요.": {
+    "en": "Microsoft WebView2 Runtime is required. Install it, then try again.",
+    "vi": "Cần Microsoft WebView2 Runtime. Hãy cài đặt rồi thử lại.",
+    "ja": "Microsoft WebView2 ランタイムが必要です。インストール後、もう一度お試しください。",
+    "zh": "需要 Microsoft WebView2 Runtime。安装后请重试。"
+  },
+  "프로그램을 시작하지 못했습니다. 폴더 전체를 다시 설치하거나 다시 시도해 주세요.": {
+    "en": "Could not start the app. Reinstall the complete folder or try again.",
+    "vi": "Không khởi động được ứng dụng. Hãy cài lại toàn bộ thư mục hoặc thử lại.",
+    "ja": "アプリを起動できませんでした。フォルダー全体を再インストールするか、もう一度お試しください。",
+    "zh": "无法启动应用，请重新安装完整文件夹或重试。"
+  },
+  "프로그램 연결을 준비하지 못했습니다. 사용자 폴더의 접근 권한을 확인해 주세요.": {
+    "en": "Could not prepare the app connection. Check access to your user folder.",
+    "vi": "Không chuẩn bị được kết nối ứng dụng. Hãy kiểm tra quyền truy cập thư mục người dùng.",
+    "ja": "アプリの接続を準備できませんでした。ユーザーフォルダーへのアクセス権を確認してください。",
+    "zh": "无法准备应用连接，请检查用户文件夹的访问权限。"
+  },
+  "WebView2 설치 안내": {
+    "en": "WebView2 installation",
+    "vi": "Cài đặt WebView2",
+    "ja": "WebView2 のインストール",
+    "zh": "安装 WebView2"
+  },
+  "다시 시도": {
+    "en": "Retry",
+    "vi": "Thử lại",
+    "ja": "再試行",
+    "zh": "重试"
+  },
+  "설정": {
+    "en": "Settings",
+    "vi": "Cài đặt",
+    "ja": "設定",
+    "zh": "设置"
+  }
+}

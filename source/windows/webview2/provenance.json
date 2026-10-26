@@ -1,0 +1,17 @@
+{
+  "url": "https://api.nuget.org/v3-flatcontainer/microsoft.web.webview2/1.0.4258.31/microsoft.web.webview2.1.0.4258.31.nupkg",
+  "version": "1.0.4258.31",
+  "nupkg_sha256": "56f7f4b8bf9aee4b8efefbbdd4f67d5f74ebd1b100ed0806da71bf76af481aa9",
+  "files": {
+    "WebView2Loader.dll": "3426dcc55fdfb8b5e7ac623cf33b4ccf283fbf68a0c5a65bddfdb4d749a8abee",
+    "LICENSE.txt": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55",
+    "WebView2.h": "dff1e3181ec7ec203a34ef6efa966590e0ef0ba1a5c3fe3b69da6508c2f8a02e"
+  },
+  "sdk_support_header": {
+    "url": "https://raw.githubusercontent.com/microsoft/win32metadata/main/generation/WinSDK/RecompiledIdlHeaders/winrt/EventToken.h",
+    "file": "EventToken.h",
+    "sha256": "1ad9e2fca0c5bf6fee40a18d8bc148b9fe5ce46d8513d395e2363d11e75e5bbb",
+    "purpose": "EventRegistrationToken declaration required by the official WebView2 header for MinGW cross-compilation",
+    "license": "Locally authored ABI compatibility declaration; not a redistributed Windows SDK header"
+  }
+}

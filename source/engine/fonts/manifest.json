@@ -1,0 +1,20 @@
+[
+  {
+    "file": "fonts/NotoSansCJK-Regular.ttc",
+    "source": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTC/NotoSansCJK-Regular.ttc",
+    "sha256": "b76b0433203017ca80401b2ee0dd69350349871c4b19d504c34dbdd80541690a",
+    "bytes": 19484784
+  },
+  {
+    "file": "licenses-agent/NotoSansCJK-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE",
+    "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "bytes": 4301
+  },
+  {
+    "file": "licenses-agent/U2Net-LICENSE.txt",
+    "source": "https://raw.githubusercontent.com/xuebinqin/U-2-Net/master/LICENSE",
+    "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "bytes": 11357
+  }
+]

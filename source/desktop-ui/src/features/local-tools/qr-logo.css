@@ -1,0 +1,25 @@
+.kio-qr-logo{margin-top:18px;padding-top:18px;border-top:1px solid var(--color-border)}
+.kio-qr-logo.dragging .kio-qr-logo-row{border-color:#c4ad00;background:#FFF3E8;box-shadow:0 0 0 2px #FFE7D455}
+.kio-qr-logo-heading,.kio-qr-logo-row{display:flex;align-items:center;gap:12px}
+.kio-qr-logo-heading{justify-content:space-between;min-height:27px;margin-bottom:12px;font-size:12px}
+.kio-qr-logo-heading strong{font-weight:700}
+.kio-qr-logo-heading strong small{font-size:10px;font-weight:400;color:var(--color-text-muted);margin-left:5px}
+.kio-qr-logo-heading>span{font-size:9px;color:var(--color-text-muted);padding:4px 6px;background:var(--color-surface-muted);border-radius:5px}
+.kio-qr-logo-shapes{display:flex;align-items:center;gap:3px;padding:2px;background:var(--color-surface-muted);border-radius:7px}
+.kio-qr-logo-shapes>button{appearance:none;border:1px solid transparent;background:transparent;border-radius:5px;color:var(--color-text-muted);font:inherit;font-size:10px;line-height:1.4;min-height:23px;padding:3px 7px;cursor:pointer;white-space:nowrap}
+.kio-qr-logo-shapes>button[aria-pressed=true]{border-color:var(--color-border);background:var(--color-surface);color:var(--color-text);box-shadow:0 1px 3px #00000006;font-weight:600}
+.kio-qr-logo-shapes>button:disabled{opacity:.5;cursor:not-allowed}
+.kio-qr-logo-row{padding:12px;background:var(--color-bg);border:1px dashed var(--color-border);border-radius:10px;gap:11px}
+.kio-qr-logo-file{display:flex;flex:1;min-width:0;align-items:flex-start;flex-direction:column;gap:6px}
+.gc-main .kio-qr-logo-file>.lt-button{min-height:28px;padding:0;border:0;border-radius:3px;background:transparent;font-weight:600;font-size:12px;text-align:left;box-shadow:none}
+.gc-main .kio-qr-logo-file>.lt-button:hover{background:transparent;text-decoration:underline;text-underline-offset:3px}
+.kio-qr-logo-file small{display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:10px;color:var(--color-text-muted)}
+.kio-qr-logo-preview{display:grid;place-items:center;flex:none;width:50px;height:50px;padding:5px;overflow:hidden;background:#fff;border:1px solid var(--color-border);border-radius:7px}
+.kio-qr-logo-preview.circle{border-radius:50%}
+.kio-qr-logo-preview.empty{color:var(--color-text-muted);background:var(--color-surface);border-style:dashed;border-radius:9px}
+.kio-qr-logo-preview img{max-width:100%;max-height:100%;object-fit:contain}
+.gc-main .kio-qr-logo-row>.lt-icon-button{min-width:27px;width:27px;height:27px;min-height:27px;padding:4px;border-color:transparent;background:transparent;color:var(--color-text-muted)}
+.gc-main .kio-qr-logo-row>.lt-icon-button:hover{background:var(--color-surface-muted)}
+.gc-main .kio-qr-logo>.lt-note{font-size:10px;line-height:1.8;margin:10px 0 0;color:var(--color-text-muted)}
+.kio-qr-scan-status{padding:8px 11px;border-radius:8px;background:var(--color-surface-muted);font-size:12px}.kio-qr-scan-status.warning{color:#a23d17}
+@media(max-width:420px){.kio-qr-logo-row{padding:10px;gap:9px}.kio-qr-logo-heading{gap:6px}.kio-qr-logo-preview{width:43px;height:43px}}

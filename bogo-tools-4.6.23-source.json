@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "program": "Bogo Tools",
+  "version": "4.6.23",
+  "sourceDirectory": "source",
+  "sourceArchive": {
+    "filename": "Bogo-Tools-4.6.23-source.zip",
+    "bytes": 7431565,
+    "sha256": "4d632a284a12a41c2e3154058f7770658677380f945ccf796dddd4ae0729f8e2",
+    "files": 438
+  },
+  "sourceManifestSha256": "d0db864e227cbfa464bc2bcf2f3bb5878103b296e491c832165681b4d9bf2c41",
+  "implementationCommit": "c171aea6ebfe3f96bba8b1c84a42dd27c57a718f",
+  "tests": {
+    "python": {
+      "run": 503,
+      "passed": 501,
+      "failed": 0,
+      "errors": 0,
+      "existingPlatformSkips": 2
+    },
+    "uiPassed": 184,
+    "extensionPassed": 51
+  },
+  "actualGuiAcceptance": "pending; no GUI acceptance is claimed by this source commit",
+  "privateDataIncluded": false,
+  "historicalImplementationGitHistoryIncluded": false
+}

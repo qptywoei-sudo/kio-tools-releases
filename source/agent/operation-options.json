@@ -1,0 +1,211 @@
+{
+  "image_process": {
+    "width": 1920,
+    "height": 0,
+    "format": "jpg",
+    "quality": 85,
+    "keep_ratio": true,
+    "no_upscale": true
+  },
+  "image_edit": {
+    "format": "png",
+    "quality": 90,
+    "crop": [
+      0,
+      0,
+      100,
+      100
+    ],
+    "rotate": 0,
+    "flip": "none|horizontal|vertical",
+    "brightness": 1,
+    "contrast": 1,
+    "saturation": 1,
+    "border": 0,
+    "borderColor": "#ffffff",
+    "layers": [
+      {
+        "type": "text|line|arrow|rect|ellipse|draw|image|mosaic|blur",
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50,
+        "text": "",
+        "color": "#2563eb",
+        "fill": "none",
+        "lineWidth": 3,
+        "fontSize": 28,
+        "opacity": 1,
+        "rotation": 0,
+        "points": [
+          [
+            0,
+            0
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "inputIndex": 0,
+        "strength": 12
+      }
+    ]
+  },
+  "image_split": {
+    "count": 4,
+    "columns": 2,
+    "rows": 2,
+    "xCuts": [
+      0.5
+    ],
+    "yCuts": [
+      0.5
+    ],
+    "format": "png",
+    "zip": true
+  },
+  "image_background": {
+    "background": "transparent|solid|gradient|image",
+    "color": "#ffffff",
+    "color2": "#dbeafe",
+    "backgroundInput": 1,
+    "strokes": [
+      {
+        "restore": false,
+        "radius": 20,
+        "points": [
+          [
+            10,
+            10
+          ]
+        ]
+      }
+    ]
+  },
+  "image_retouch": {
+    "strokes": [
+      {
+        "radius": 10,
+        "points": [
+          [
+            10,
+            10
+          ]
+        ]
+      }
+    ],
+    "rectangles": [
+      [
+        0,
+        0,
+        50,
+        50
+      ]
+    ]
+  },
+  "image_mosaic": {
+    "regions": [
+      {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 50,
+        "shape": "rect|ellipse",
+        "mode": "pixel|blur|random",
+        "strength": 12
+      }
+    ],
+    "faces": false,
+    "format": "png"
+  },
+  "signature_apply": {
+    "pages": "1-3",
+    "allPages": false,
+    "signatureInput": 1,
+    "text": "",
+    "x": 20,
+    "y": 20,
+    "width": 160,
+    "height": 60,
+    "rotation": 0,
+    "opacity": 1,
+    "format": "png|jpg|pdf|docx"
+  },
+  "canvas_export": {
+    "width": 1920,
+    "height": 1080,
+    "background": "#ffffff",
+    "format": "png|jpg|webp|pdf|gif",
+    "join": false,
+    "pages": [
+      {
+        "layers": []
+      }
+    ]
+  },
+  "pdf_split": {
+    "mode": "pages|selected|groups",
+    "pages": "1-3",
+    "groupSize": 1,
+    "zip": true
+  },
+  "pdf_docx": {},
+  "pdf_pptx": {
+    "dpi": 144
+  },
+  "pdf_xlsx": {},
+  "code_generate": {
+    "kind": "qr|code128|ean13|ean8|upca|code39",
+    "text": "https://example.com",
+    "format": "png|jpg|svg",
+    "size": 512,
+    "foreground": "#111827",
+    "background": "#ffffff",
+    "style": "square|rounded|circle",
+    "logoInput": "optional authorized PNG/JPEG input index; SVG is safely rasterized in the UI",
+    "logo_shape": "square|circle",
+    "logoSizing": "automatic largest verified 30..10 percent of active QR side",
+    "logoPaddingPx": "4 (fixed)",
+    "errorCorrection": "H (fixed)",
+    "scanVerified": "returned after scanning the exported bytes and comparing exact original content"
+  },
+  "code_read": {},
+  "video_gif": {
+    "ranges": [
+      {
+        "start": 0,
+        "end": 5
+      }
+    ],
+    "width": 720,
+    "fps": 12,
+    "aspect": "original|16:9|9:16|1:1",
+    "watermark": "",
+    "zip": false
+  },
+  "capture": {
+    "mode": "area|full|window",
+    "monitor": -1
+  },
+  "record_start": {
+    "mode": "full|area|window",
+    "monitor": 0,
+    "fps": 30,
+    "microphone": false,
+    "systemAudio": false
+  },
+  "record_stop": {},
+  "record_gif": {
+    "width": 720,
+    "fps": 12
+  },
+  "web_capture": {
+    "format": "png|jpg|pdf",
+    "split": false,
+    "maxHeight": 12000
+  },
+  "editor_open": {},
+  "phone_open": {},
+  "notes": "HTTP inputs[] opaque ID array resolved by agent into engine inputs/paths/path; options cannot supply filesystem paths or output_dir. Missing crop means preserve original. Layer image inputIndex indexes uploaded inputs. UI can omit all advanced settings. PDF existing options unchanged."
+}

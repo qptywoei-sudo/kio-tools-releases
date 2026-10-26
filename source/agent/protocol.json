@@ -1,0 +1,299 @@
+{
+  "version": 1,
+  "agentVersion": "4.1.0",
+  "port": 4323,
+  "bind": "127.0.0.1",
+  "legacyHelperPort": 4320,
+  "nativeBridge": {
+    "transport": "Private per-user directory, atomic JSON requests/responses; never shell commands",
+    "directory": "<stateDir>/bridge",
+    "requests": "requests/<uuid>.json",
+    "responses": "responses/<uuid>.json",
+    "request": {
+      "id": "uuid",
+      "operation": "allowlisted name",
+      "args": {},
+      "expiresAt": 0
+    },
+    "response": {
+      "id": "uuid",
+      "ok": true,
+      "data": {},
+      "errorCode": ""
+    },
+    "operations": {
+      "pair.approve": {
+        "args": {
+          "origin": "exact origin",
+          "clientName": "ADMIN"
+        },
+        "data": {
+          "approved": true
+        }
+      },
+      "folder.choose": {
+        "args": {
+          "purpose": "search|save"
+        },
+        "data": {
+          "path": "native chosen absolute path",
+          "cancelled": false
+        }
+      },
+      "files.choose": {
+        "args": {
+          "kind": "image|pdf|video|any",
+          "multiple": true
+        },
+        "data": {
+          "paths": []
+        }
+      },
+      "file.open": {
+        "args": {
+          "path": "agent-validated absolute path"
+        },
+        "data": {}
+      },
+      "file.reveal": {
+        "args": {
+          "path": "agent-validated absolute path"
+        },
+        "data": {}
+      },
+      "capture.start": {
+        "args": {
+          "mode": "area|full|window",
+          "monitor": 0
+        },
+        "data": {
+          "paths": [
+            "captured file"
+          ]
+        }
+      },
+      "editor.open": {
+        "args": {
+          "path": "agent-validated artifact"
+        },
+        "data": {}
+      },
+      "record.start": {
+        "args": {
+          "mode": "full|area|window",
+          "monitor": 0,
+          "microphone": false,
+          "systemAudio": false,
+          "fps": 30
+        },
+        "data": {
+          "recording": true
+        }
+      },
+      "record.stop": {
+        "args": {},
+        "data": {
+          "paths": [
+            "recorded file"
+          ]
+        }
+      },
+      "permissions.get": {
+        "args": {},
+        "data": {
+          "screenCapture": "available|needsPermission",
+          "accessibility": "available|needsPermission",
+          "files": "available"
+        }
+      },
+      "permissions.open": {
+        "args": {
+          "permission": "screenCapture|accessibility|files"
+        },
+        "data": {}
+      },
+      "settings.apply": {
+        "args": {
+          "language": "ko|en|vi|ja|zh",
+          "shortcuts": {},
+          "autoStart": true
+        },
+        "data": {
+          "applied": true
+        }
+      },
+      "phone.open": {
+        "args": {},
+        "data": {}
+      },
+      "native.tools": {
+        "args": {
+          "tool": "image|pdf|capture|record|codes|phone"
+        },
+        "data": {}
+      },
+      "phone.status": {
+        "args": {},
+        "data": "Internal serial/device state; HTTP exposes only owner-scoped opaque ids"
+      },
+      "phone.pair": {
+        "args": {
+          "address": "LAN IPv4:port",
+          "code": "6 ASCII digits"
+        },
+        "data": {
+          "success": true
+        }
+      },
+      "phone.connect": {
+        "args": {
+          "address": "LAN IPv4:port"
+        },
+        "data": {
+          "success": true
+        }
+      },
+      "phone.start": {
+        "args": {
+          "serial": "Listed authorized ADB serial",
+          "keyboard": "uhid|sdk",
+          "mouse": "sdk|uhid",
+          "audio": "output|aac|off",
+          "clipboard": "boolean"
+        },
+        "data": {
+          "success": true
+        }
+      },
+      "phone.stop": {
+        "args": {},
+        "data": {
+          "success": true
+        }
+      },
+      "phone.keyboard": {
+        "args": {
+          "serial": "Listed authorized ADB serial"
+        },
+        "data": {
+          "success": true
+        }
+      }
+    }
+  },
+  "web": {
+    "health": "GET /health",
+    "pair": "POST /pair {clientName}; native user approval -> {token,device}",
+    "authentication": "X-Local-Agent-Token, exact approved Origin; no tokens in URL",
+    "upload": "POST /uploads raw bytes, X-File-Name URI-encoded; -> {id,name,size,mime}",
+    "nativeChoose": "POST /files/choose {kind,multiple}; -> {files:[{id,name,size,mime}]}",
+    "jobs": "POST /jobs {operation,inputs:[opaque IDs],options:{}} -> {job}",
+    "events": "GET /events authenticated fetch SSE; data {type,job?,index?,settings?}",
+    "artifacts": "GET /artifacts/<opaque ID>; token header",
+    "artifactAction": "POST /files/open|reveal {id}",
+    "roots": "GET /roots; POST /roots/select; DELETE /roots/<id>",
+    "search": "POST /search {query,limit} -> {files:[id,name,folder,extension,size,modified,snippet,score]}",
+    "rename": "POST /rename/preview {ids,options} -> {previewId,items,conflicts}; POST /rename/commit {previewId}",
+    "settings": "GET /settings; PATCH /settings {language,shortcuts,autoStart}; POST /settings/save-folder",
+    "permissions": "GET /permissions; POST /permissions/open {permission}",
+    "browser": "GET /browser; POST /browser/capture {format,split}; extension polls commands and returns bounded tile uploads",
+    "operations": [
+      "image_process",
+      "image_edit",
+      "image_split",
+      "image_background",
+      "image_retouch",
+      "image_mosaic",
+      "canvas_export",
+      "signature_apply",
+      "pdf_merge",
+      "pdf_extract",
+      "pdf_manage",
+      "images_pdf",
+      "pdf_render",
+      "pdf_info",
+      "pdf_annotate",
+      "pdf_split",
+      "pdf_docx",
+      "pdf_pptx",
+      "pdf_xlsx",
+      "code_generate",
+      "code_read",
+      "video_gif",
+      "capture",
+      "record_start",
+      "record_stop",
+      "record_gif",
+      "web_capture",
+      "editor_open",
+      "phone_open"
+    ]
+  },
+  "security": {
+    "noArbitraryShell": true,
+    "noCallerAbsolutePaths": true,
+    "rootSelection": "native picker only",
+    "outputs": "configured output folder, unique names, originals preserved",
+    "CORSWildcard": false,
+    "longTasks": "bounded queue, cancellation, authenticated SSE with reconnect",
+    "pairing": "origin-scoped revocable tokens, user approval, private state files"
+  },
+  "ownership": {
+    "root": [
+      "work/agent backend",
+      "engine extensions",
+      "browser extension",
+      "integration packaging"
+    ],
+    "adminAgent": [
+      "ADMIN local-tools namespace",
+      "work/shared-tools UI build",
+      "central file ranking"
+    ],
+    "macAgent": [
+      "work/mac native bridge, shared UI host and native fallback"
+    ],
+    "windowsAgent": [
+      "work/windows native bridge, shared UI host and native fallback"
+    ]
+  },
+  "portCandidates": [
+    4323,
+    4324,
+    4325,
+    4321
+  ],
+  "phoneControls": {
+    "http": {
+      "GET /phone": "Authenticated devices/status/options, origin-scoped opaque ids",
+      "POST /phone/pair": {
+        "address": "LAN IPv4:port",
+        "code": "6 ASCII digits (native stdin only)"
+      },
+      "POST /phone/connect": {
+        "address": "LAN IPv4:port"
+      },
+      "POST /phone/start": {
+        "deviceId": "phone-<32 hex>",
+        "keyboard": "uhid|sdk (default uhid)",
+        "mouse": "sdk|uhid (default sdk)",
+        "audio": "output|aac|off",
+        "clipboard": "boolean"
+      },
+      "POST /phone/stop": {},
+      "POST /phone/keyboard-settings": {
+        "deviceId": "phone-<32 hex>"
+      }
+    },
+    "nativeOperations": [
+      "phone.status",
+      "phone.pair",
+      "phone.connect",
+      "phone.start",
+      "phone.stop",
+      "phone.keyboard"
+    ],
+    "requiredNativeHeartbeat": "phoneControl:true",
+    "implementation": "Existing native ADB helpers, single owned scrcpy session; no second engine"
+  }
+}

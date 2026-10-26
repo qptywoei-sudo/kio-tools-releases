@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Bogo Tools Web Capture"
+  },
+  "description": {
+    "message": "擷取當前頁面並使用本地工具編輯。"
+  },
+  "capture": {
+    "message": "擷取當前頁面"
+  }
+}

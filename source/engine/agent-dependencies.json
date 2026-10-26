@@ -1,0 +1,434 @@
+[
+  {
+    "arch": "arm64",
+    "name": "numpy",
+    "version": "2.5.3",
+    "filename": "numpy-2.5.3-cp313-cp313-macosx_11_0_arm64.whl",
+    "sha256": "92f30e89b8ee0ecf363033576c422b2f58fed6a80bed0aa48dff6d14c654663e",
+    "url": "https://files.pythonhosted.org/packages/2f/06/9dc9e48b5e5e941c8b10350c5ff2d721da42a20517d911d15544246775ff/numpy-2.5.3-cp313-cp313-macosx_11_0_arm64.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "watchdog",
+    "version": "6.0.0",
+    "filename": "watchdog-6.0.0-cp313-cp313-macosx_11_0_arm64.whl",
+    "sha256": "a175f755fc2279e0b7312c0035d52e27211a5bc39719dd529625b1930917345b",
+    "url": "https://files.pythonhosted.org/packages/fe/c4/225c87bae08c8b9ec99030cd48ae9c4eca050a59bf5c2255853e18c87b50/watchdog-6.0.0-cp313-cp313-macosx_11_0_arm64.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "imageio-ffmpeg",
+    "version": "0.6.0",
+    "filename": "imageio_ffmpeg-0.6.0-py3-none-macosx_11_0_arm64.whl",
+    "sha256": "b1ae3173414b5fc5f538a726c4e48ea97edc0d2cdc11f103afee655c463fa742",
+    "url": "https://files.pythonhosted.org/packages/40/5c/f3d8a657d362cc93b81aab8feda487317da5b5d31c0e1fdfd5e986e55d17/imageio_ffmpeg-0.6.0-py3-none-macosx_11_0_arm64.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "opencv-python-headless",
+    "version": "4.13.0.92",
+    "filename": "opencv_python_headless-4.13.0.92-cp37-abi3-macosx_13_0_arm64.whl",
+    "sha256": "1a7d040ac656c11b8c38677cc8cccdc149f98535089dbe5b081e80a4e5903209",
+    "url": "https://files.pythonhosted.org/packages/79/42/2310883be3b8826ac58c3f2787b9358a2d46923d61f88fedf930bc59c60c/opencv_python_headless-4.13.0.92-cp37-abi3-macosx_13_0_arm64.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "packaging",
+    "version": "26.3",
+    "filename": "packaging-26.3-py3-none-any.whl",
+    "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "python-pptx",
+    "version": "1.0.2",
+    "filename": "python_pptx-1.0.2-py3-none-any.whl",
+    "sha256": "160838e0b8565a8b1f67947675886e9fea18aa5e795db7ae531606d68e785cba",
+    "url": "https://files.pythonhosted.org/packages/d9/4f/00be2196329ebbff56ce564aa94efb0fbc828d00de250b1980de1a34ab49/python_pptx-1.0.2-py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "lxml",
+    "version": "6.1.3",
+    "filename": "lxml-6.1.3-cp313-cp313-macosx_10_13_universal2.whl",
+    "sha256": "3a48093cdb058a93af842ede9703520e810b05dcd0fc6d7190a06376c3bfb6bd",
+    "url": "https://files.pythonhosted.org/packages/52/05/3ef45db776baea068044c799bbba68f3ca00a440c0e930a17c572f3d9639/lxml-6.1.3-cp313-cp313-macosx_10_13_universal2.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "XlsxWriter",
+    "version": "3.2.9",
+    "filename": "xlsxwriter-3.2.9-py3-none-any.whl",
+    "sha256": "9a5db42bc5dff014806c58a20b9eae7322a134abb6fce3c92c181bfb275ec5b3",
+    "url": "https://files.pythonhosted.org/packages/3a/0c/3662f4a66880196a590b202f0db82d919dd2f89e99a27fadef91c4a33d41/xlsxwriter-3.2.9-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "numpy",
+    "version": "2.5.3",
+    "filename": "numpy-2.5.3-cp313-cp313-macosx_10_13_x86_64.whl",
+    "sha256": "66a78fe4556c60aceda5916f9eacd638b18e9e681016ec302dcb4682d6d4d034",
+    "url": "https://files.pythonhosted.org/packages/79/e5/8fb89cd46d14e35699d13bf943a5f5f441ecee8667120a1f6105ab89e349/numpy-2.5.3-cp313-cp313-macosx_10_13_x86_64.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "watchdog",
+    "version": "6.0.0",
+    "filename": "watchdog-6.0.0-cp313-cp313-macosx_10_13_x86_64.whl",
+    "sha256": "76aae96b00ae814b181bb25b1b98076d5fc84e8a53cd8885a318b42b6d3a5134",
+    "url": "https://files.pythonhosted.org/packages/85/83/cdf13902c626b28eedef7ec4f10745c52aad8a8fe7eb04ed7b1f111ca20e/watchdog-6.0.0-cp313-cp313-macosx_10_13_x86_64.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "imageio-ffmpeg",
+    "version": "0.6.0",
+    "filename": "imageio_ffmpeg-0.6.0-py3-none-macosx_10_9_intel.macosx_10_9_x86_64.whl",
+    "sha256": "9d2baaf867088508d4a3458e61eeb30e945c4ad8016025545f66c4b5aaef0a61",
+    "url": "https://files.pythonhosted.org/packages/da/58/87ef68ac83f4c7690961bce288fd8e382bc5f1513860fc7f90a9c1c1c6bf/imageio_ffmpeg-0.6.0-py3-none-macosx_10_9_intel.macosx_10_9_x86_64.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "opencv-python-headless",
+    "version": "4.13.0.92",
+    "filename": "opencv_python_headless-4.13.0.92-cp37-abi3-macosx_14_0_x86_64.whl",
+    "sha256": "3e0a6f0a37994ec6ce5f59e936be21d5d6384a4556f2d2da9c2f9c5dc948394c",
+    "url": "https://files.pythonhosted.org/packages/2d/1e/6f9e38005a6f7f22af785df42a43139d0e20f169eb5787ce8be37ee7fcc9/opencv_python_headless-4.13.0.92-cp37-abi3-macosx_14_0_x86_64.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "packaging",
+    "version": "26.3",
+    "filename": "packaging-26.3-py3-none-any.whl",
+    "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "python-pptx",
+    "version": "1.0.2",
+    "filename": "python_pptx-1.0.2-py3-none-any.whl",
+    "sha256": "160838e0b8565a8b1f67947675886e9fea18aa5e795db7ae531606d68e785cba",
+    "url": "https://files.pythonhosted.org/packages/d9/4f/00be2196329ebbff56ce564aa94efb0fbc828d00de250b1980de1a34ab49/python_pptx-1.0.2-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "lxml",
+    "version": "6.1.3",
+    "filename": "lxml-6.1.3-cp313-cp313-macosx_10_13_x86_64.whl",
+    "sha256": "887c021d9a977cff89cb273047c1352997b772a8908a25c21836861f69b92be1",
+    "url": "https://files.pythonhosted.org/packages/8c/a5/eee2fc77eee5ea68e4a4334b1def1781a3beaeefd3d98e81b4a38dc447b7/lxml-6.1.3-cp313-cp313-macosx_10_13_x86_64.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "XlsxWriter",
+    "version": "3.2.9",
+    "filename": "xlsxwriter-3.2.9-py3-none-any.whl",
+    "sha256": "9a5db42bc5dff014806c58a20b9eae7322a134abb6fce3c92c181bfb275ec5b3",
+    "url": "https://files.pythonhosted.org/packages/3a/0c/3662f4a66880196a590b202f0db82d919dd2f89e99a27fadef91c4a33d41/xlsxwriter-3.2.9-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "numpy",
+    "version": "2.5.3",
+    "filename": "numpy-2.5.3-cp313-cp313-win_amd64.whl",
+    "sha256": "71cad2b2a7451ab79d8f5e71b453485b6775963d5cf794179144a7463fe6e8ec",
+    "url": "https://files.pythonhosted.org/packages/f3/ec/100f2b1794ede74a9b3d7ec6b9736927f56713414c1dfe19ab6c383494bf/numpy-2.5.3-cp313-cp313-win_amd64.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "watchdog",
+    "version": "6.0.0",
+    "filename": "watchdog-6.0.0-py3-none-win_amd64.whl",
+    "sha256": "cbafb470cf848d93b5d013e2ecb245d4aa1c8fd0504e863ccefa32445359d680",
+    "url": "https://files.pythonhosted.org/packages/db/d9/c495884c6e548fce18a8f40568ff120bc3a4b7b99813081c8ac0c936fa64/watchdog-6.0.0-py3-none-win_amd64.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "imageio-ffmpeg",
+    "version": "0.6.0",
+    "filename": "imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl",
+    "sha256": "02fa47c83703c37df6bfe4896aab339013f62bf02c5ebf2dce6da56af04ffc0a",
+    "url": "https://files.pythonhosted.org/packages/2c/c6/fa760e12a2483469e2bf5058c5faff664acf66cadb4df2ad6205b016a73d/imageio_ffmpeg-0.6.0-py3-none-win_amd64.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "opencv-python-headless",
+    "version": "4.13.0.92",
+    "filename": "opencv_python_headless-4.13.0.92-cp37-abi3-win_amd64.whl",
+    "sha256": "77a82fe35ddcec0f62c15f2ba8a12ecc2ed4207c17b0902c7a3151ae29f37fb6",
+    "url": "https://files.pythonhosted.org/packages/4a/90/b338326131ccb2aaa3c2c85d00f41822c0050139a4bfe723cfd95455bd2d/opencv_python_headless-4.13.0.92-cp37-abi3-win_amd64.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "packaging",
+    "version": "26.3",
+    "filename": "packaging-26.3-py3-none-any.whl",
+    "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+    "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "python-pptx",
+    "version": "1.0.2",
+    "filename": "python_pptx-1.0.2-py3-none-any.whl",
+    "sha256": "160838e0b8565a8b1f67947675886e9fea18aa5e795db7ae531606d68e785cba",
+    "url": "https://files.pythonhosted.org/packages/d9/4f/00be2196329ebbff56ce564aa94efb0fbc828d00de250b1980de1a34ab49/python_pptx-1.0.2-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "lxml",
+    "version": "6.1.3",
+    "filename": "lxml-6.1.3-cp313-cp313-win_amd64.whl",
+    "sha256": "e477aca0bc0d19f3b4ae9e4f2a1cfd687c31bf772d78734910658186b40b2477",
+    "url": "https://files.pythonhosted.org/packages/c0/28/e46a7702bd95e9043291f7c3539b6184cba66f96cea9936f20939b284eeb/lxml-6.1.3-cp313-cp313-win_amd64.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "XlsxWriter",
+    "version": "3.2.9",
+    "filename": "xlsxwriter-3.2.9-py3-none-any.whl",
+    "sha256": "9a5db42bc5dff014806c58a20b9eae7322a134abb6fce3c92c181bfb275ec5b3",
+    "url": "https://files.pythonhosted.org/packages/3a/0c/3662f4a66880196a590b202f0db82d919dd2f89e99a27fadef91c4a33d41/xlsxwriter-3.2.9-py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "PyJWT",
+    "version": "2.15.1",
+    "filename": "pyjwt-2.15.1-py3-none-any.whl",
+    "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+    "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "PyJWT",
+    "version": "2.15.1",
+    "filename": "pyjwt-2.15.1-py3-none-any.whl",
+    "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+    "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "PyJWT",
+    "version": "2.15.1",
+    "filename": "pyjwt-2.15.1-py3-none-any.whl",
+    "sha256": "42d59d631f7768a1028a64c7ff581a9bf7519804daf91fc5b6c56e30eec5e193",
+    "url": "https://files.pythonhosted.org/packages/50/ca/44de4e75f8aadc457f0634be3b542815078ded46dca30efb960edeecad6e/pyjwt-2.15.1-py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "cryptography",
+    "version": "50.0.2",
+    "filename": "cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl",
+    "sha256": "fa8f5efb344d6908a1ce62f4a24e2e5780f825d6f53f5f50ec5ffacac72936cb",
+    "url": "https://files.pythonhosted.org/packages/e5/56/d194340cc4a57535e82e1bee9e89667ac4b7c13b5d3f59686deae3094dd5/cryptography-50.0.2-cp311-abi3-macosx_11_0_arm64.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "cryptography",
+    "version": "48.0.1",
+    "filename": "cryptography-48.0.1-cp311-abi3-macosx_10_9_universal2.whl",
+    "sha256": "3e4a1a3232eef2e6c732827d5722db29a0cc8b27af2a4d865b094cf954be9ca1",
+    "url": "https://files.pythonhosted.org/packages/1b/bc/ee4137cbbe105652c0ee4252792b78fc8e7afa4b8e61d9d5dc05a7f45731/cryptography-48.0.1-cp311-abi3-macosx_10_9_universal2.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "cryptography",
+    "version": "50.0.2",
+    "filename": "cryptography-50.0.2-cp311-abi3-win_amd64.whl",
+    "sha256": "7afa5a6602a9f29af1f3a2965f831bae7c9d5d597b7cbb716d41ab3b7d89879c",
+    "url": "https://files.pythonhosted.org/packages/9a/4f/adfc442765721292fff86d314ce385d3249d22db42295c0dd057727b60f3/cryptography-50.0.2-cp311-abi3-win_amd64.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "cffi",
+    "version": "2.1.1",
+    "filename": "cffi-2.1.1-cp313-cp313-macosx_11_0_arm64.whl",
+    "sha256": "19ee6127ee34de7d83ce3d371ebc5ed91addbdcc39f9ab15ce4eb35a4e534971",
+    "url": "https://files.pythonhosted.org/packages/55/41/4c7042f317b9217502988f0873af87e16ad606dc20f84e546e3e6ce9764c/cffi-2.1.1-cp313-cp313-macosx_11_0_arm64.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "cffi",
+    "version": "2.1.1",
+    "filename": "cffi-2.1.1-cp313-cp313-macosx_10_15_x86_64.whl",
+    "sha256": "9d2055050ea716bd38b7f7f1579c275386646b4894c155a3e2f3cd62ed41b7c6",
+    "url": "https://files.pythonhosted.org/packages/a7/46/2e5fdde8555706dd98139a910ca11be02809f3f605ce956f655d0214e100/cffi-2.1.1-cp313-cp313-macosx_10_15_x86_64.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "cffi",
+    "version": "2.1.1",
+    "filename": "cffi-2.1.1-cp313-cp313-win_amd64.whl",
+    "sha256": "1aa5645c30469b09530c4ebca77ebf8f17618293c58f8549cb1a543a50236e7d",
+    "url": "https://files.pythonhosted.org/packages/60/a6/8b149b2c3f2e11aaa1618ef64500b45f50f22c57a977a4dff1aff1f91042/cffi-2.1.1-cp313-cp313-win_amd64.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "pycparser",
+    "version": "3.11",
+    "filename": "pycparser-3.11-py3-none-any.whl",
+    "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80",
+    "url": "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "pycparser",
+    "version": "3.11",
+    "filename": "pycparser-3.11-py3-none-any.whl",
+    "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80",
+    "url": "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "pycparser",
+    "version": "3.11",
+    "filename": "pycparser-3.11-py3-none-any.whl",
+    "sha256": "51d5a8ba2be0bbe440b99d2112604c95bbbc3c2748a64260186c541e1729cd80",
+    "url": "https://files.pythonhosted.org/packages/90/11/0e6f11117525ff0eec40ebac3d313376f102df93ca44ad9e893ee85e4f89/pycparser-3.11-py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "flatbuffers",
+    "version": "25.12.19",
+    "filename": "flatbuffers-25.12.19-py2.py3-none-any.whl",
+    "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+    "url": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "flatbuffers",
+    "version": "25.12.19",
+    "filename": "flatbuffers-25.12.19-py2.py3-none-any.whl",
+    "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+    "url": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "flatbuffers",
+    "version": "25.12.19",
+    "filename": "flatbuffers-25.12.19-py2.py3-none-any.whl",
+    "sha256": "7634f50c427838bb021c2d66a3d1168e9d199b0607e6329399f04846d42e20b4",
+    "url": "https://files.pythonhosted.org/packages/e8/2d/d2a548598be01649e2d46231d151a6c56d10b964d94043a335ae56ea2d92/flatbuffers-25.12.19-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "protobuf",
+    "version": "7.36.2",
+    "filename": "protobuf-7.36.2-py3-none-any.whl",
+    "sha256": "bdb3a345d48db958e6ce1f18e508beb0cc981d64f24088427549c866cd039f1e",
+    "url": "https://files.pythonhosted.org/packages/e4/04/d52c7016b04b6c5108f26691f9d33ec82a9b65d041f1a9c771137693d618/protobuf-7.36.2-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "protobuf",
+    "version": "7.36.2",
+    "filename": "protobuf-7.36.2-py3-none-any.whl",
+    "sha256": "bdb3a345d48db958e6ce1f18e508beb0cc981d64f24088427549c866cd039f1e",
+    "url": "https://files.pythonhosted.org/packages/e4/04/d52c7016b04b6c5108f26691f9d33ec82a9b65d041f1a9c771137693d618/protobuf-7.36.2-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "protobuf",
+    "version": "7.36.2",
+    "filename": "protobuf-7.36.2-py3-none-any.whl",
+    "sha256": "bdb3a345d48db958e6ce1f18e508beb0cc981d64f24088427549c866cd039f1e",
+    "url": "https://files.pythonhosted.org/packages/e4/04/d52c7016b04b6c5108f26691f9d33ec82a9b65d041f1a9c771137693d618/protobuf-7.36.2-py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "coloredlogs",
+    "version": "15.0.1",
+    "filename": "coloredlogs-15.0.1-py2.py3-none-any.whl",
+    "sha256": "612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934",
+    "url": "https://files.pythonhosted.org/packages/a7/06/3d6badcf13db419e25b07041d9c7b4a2c331d3f4e7134445ec5df57714cd/coloredlogs-15.0.1-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "coloredlogs",
+    "version": "15.0.1",
+    "filename": "coloredlogs-15.0.1-py2.py3-none-any.whl",
+    "sha256": "612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934",
+    "url": "https://files.pythonhosted.org/packages/a7/06/3d6badcf13db419e25b07041d9c7b4a2c331d3f4e7134445ec5df57714cd/coloredlogs-15.0.1-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "coloredlogs",
+    "version": "15.0.1",
+    "filename": "coloredlogs-15.0.1-py2.py3-none-any.whl",
+    "sha256": "612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934",
+    "url": "https://files.pythonhosted.org/packages/a7/06/3d6badcf13db419e25b07041d9c7b4a2c331d3f4e7134445ec5df57714cd/coloredlogs-15.0.1-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "humanfriendly",
+    "version": "10.0",
+    "filename": "humanfriendly-10.0-py2.py3-none-any.whl",
+    "sha256": "1697e1a8a8f550fd43c2865cd84542fc175a61dcb779b6fee18cf6b6ccba1477",
+    "url": "https://files.pythonhosted.org/packages/f0/0f/310fb31e39e2d734ccaa2c0fb981ee41f7bd5056ce9bc29b2248bd569169/humanfriendly-10.0-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "humanfriendly",
+    "version": "10.0",
+    "filename": "humanfriendly-10.0-py2.py3-none-any.whl",
+    "sha256": "1697e1a8a8f550fd43c2865cd84542fc175a61dcb779b6fee18cf6b6ccba1477",
+    "url": "https://files.pythonhosted.org/packages/f0/0f/310fb31e39e2d734ccaa2c0fb981ee41f7bd5056ce9bc29b2248bd569169/humanfriendly-10.0-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "humanfriendly",
+    "version": "10.0",
+    "filename": "humanfriendly-10.0-py2.py3-none-any.whl",
+    "sha256": "1697e1a8a8f550fd43c2865cd84542fc175a61dcb779b6fee18cf6b6ccba1477",
+    "url": "https://files.pythonhosted.org/packages/f0/0f/310fb31e39e2d734ccaa2c0fb981ee41f7bd5056ce9bc29b2248bd569169/humanfriendly-10.0-py2.py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "sympy",
+    "version": "1.14.0",
+    "filename": "sympy-1.14.0-py3-none-any.whl",
+    "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+    "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "sympy",
+    "version": "1.14.0",
+    "filename": "sympy-1.14.0-py3-none-any.whl",
+    "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+    "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "sympy",
+    "version": "1.14.0",
+    "filename": "sympy-1.14.0-py3-none-any.whl",
+    "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+    "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl"
+  },
+  {
+    "arch": "arm64",
+    "name": "mpmath",
+    "version": "1.3.0",
+    "filename": "mpmath-1.3.0-py3-none-any.whl",
+    "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+    "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl"
+  },
+  {
+    "arch": "x86_64",
+    "name": "mpmath",
+    "version": "1.3.0",
+    "filename": "mpmath-1.3.0-py3-none-any.whl",
+    "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+    "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl"
+  },
+  {
+    "arch": "win64",
+    "name": "mpmath",
+    "version": "1.3.0",
+    "filename": "mpmath-1.3.0-py3-none-any.whl",
+    "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+    "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl"
+  }
+]

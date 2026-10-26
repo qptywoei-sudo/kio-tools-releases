@@ -1,0 +1,14 @@
+export type ToolLanguage = 'ko'|'en'|'vi'|'ja'|'zh-TW'|'zh';
+export type AgentFile = {id:string;name:string;size?:number;mime?:string;folder?:string;extension?:string;modified?:number|string;snippet?:string;score?:number};
+export type AgentDevice = {id:string;name?:string;os?:string;platform?:string;version?:string};
+export type AgentHealth = {ok?:boolean;connected?:boolean;version?:string;agentVersion?:string;os?:string;deviceName?:string;deviceId?:string;nativeReady?:boolean;recording?:boolean;paused?:boolean;monitors?:Array<{id:number;name?:string;x:number;y:number;width:number;height:number;primary:boolean}>;recordingOptions?:{microphone?:boolean;systemAudio?:boolean;fpsMin?:number;fpsMax?:number;formats?:string[]};device?:AgentDevice;capabilities?:string[]|Record<string,boolean>;operations?:string[]|Record<string,boolean>};
+export type AgentJob = {previewOnly?:boolean;id:string;operation?:string;status:string;progress?:number;errorCode?:string;error?:string;artifacts?:AgentFile[];result?:{files?:AgentFile[];artifacts?:AgentFile[];data?:Record<string,unknown>};data?:Record<string,unknown>};
+export type AgentEvent = {type:string;job?:AgentJob;settings?:AgentSettings;index?:Record<string,unknown>;rootId?:string;status?:string;done?:number;total?:number};
+export type RecordingPreferences={mode:'area'|'full'|'window';monitor?:number;monitorName?:string};
+export type AgentSettings = {recording?:RecordingPreferences;saveMode?:'local'|'drive'|'both';language?:ToolLanguage;shortcuts?:Record<string,string>;autoStart?:boolean;autoStartStatus?:'enabled'|'disabled'|'blocked'|'repair'|'error';saveFolder?:string;saveFolderName?:string;closeAfterCaptureCopy?:boolean;openCaptureEditor?:boolean;captureFormat?:'png'|'jpg'};
+export type AgentRoot = {id:string;name?:string;path?:string;count?:number;status?:string;done?:number;total?:number};
+export type RenamePreview = {previewId:string;items:Array<{id:string;name?:string;before?:string;after?:string}>;conflicts:unknown[]};
+export type ToolTranslate = (key:string,variables?:Record<string,string|number>)=>string;
+export type ReleaseManifest = {macDownloadUrl?:string;windowsDownloadUrl?:string;macUpdateUrl?:string;windowsUpdateUrl?:string;browserDownloadUrl?:string;macArmDownloadUrl?:string;macIntelDownloadUrl?:string;latestVersion?:string;macBytes?:number;windowsBytes?:number;macArmBytes?:number;macIntelBytes?:number;macSha256?:string;windowsSha256?:string;macArmSha256?:string;macIntelSha256?:string};
+export type PhoneOptions = {keyboard:'uhid'|'sdk';mouse:'sdk'|'uhid';audio:'output'|'aac'|'off';clipboard:boolean};
+export type PhoneState = {devices:Array<{id:string;label:string;transport:'usb'|'wifi';status:'device'|'unauthorized'|'offline'}>;running:boolean;activeDeviceId?:string;options:PhoneOptions;available:boolean;errorCode?:'phoneUnavailable'|'phoneStartFailed'|'phoneDeviceMissing'|'phoneUnauthorized'};

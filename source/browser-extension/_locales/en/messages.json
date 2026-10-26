@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Bogo Tools Web Capture"
+  },
+  "description": {
+    "message": "Capture the current page and edit it with your local tools."
+  },
+  "capture": {
+    "message": "Capture current page"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Bogo Tools Web Capture"
+  },
+  "description": {
+    "message": "Chụp trang hiện tại và chỉnh sửa bằng công cụ cục bộ."
+  },
+  "capture": {
+    "message": "Chụp trang hiện tại"
+  }
+}

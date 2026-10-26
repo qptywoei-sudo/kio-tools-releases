@@ -1,0 +1,24 @@
+{
+  "python_version": "3.13.16",
+  "python_release": "20261003",
+  "sources": [
+    {
+      "architecture": "arm64",
+      "archive": "cpython-3.13.16+20261003-aarch64-apple-darwin-install_only.tar.gz",
+      "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261003/cpython-3.13.16%2B20261003-aarch64-apple-darwin-install_only.tar.gz",
+      "sha256": "d8975d7df4f08f7b1c7aafcdfacbddcec3d366415f2c1a72b2466b6850815933"
+    },
+    {
+      "architecture": "x86_64",
+      "archive": "cpython-3.13.16+20261003-x86_64-apple-darwin-install_only.tar.gz",
+      "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261003/cpython-3.13.16%2B20261003-x86_64-apple-darwin-install_only.tar.gz",
+      "sha256": "8e9cb087305bfb8969f68a905f79f41469d4aa5220c1aa71ada7fc9953bdba0f"
+    },
+    {
+      "architecture": "win64",
+      "archive": "python-3.13.16-embed-amd64.zip",
+      "url": "https://www.python.org/ftp/python/3.13.16/python-3.13.16-embed-amd64.zip",
+      "sha256": "97dae5274cc54867065e8d5a3226e48c35017ed332a0fdb0e27d5b5821961297"
+    }
+  ]
+}

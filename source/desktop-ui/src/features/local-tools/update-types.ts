@@ -1,0 +1,2 @@
+export type UpdatePhase='idle'|'checking'|'current'|'available'|'downloading'|'ready'|'preparing'|'restarting'|'error';
+export type UpdateStatus={currentVersion:string;latestVersion:string|null;available:boolean;phase:UpdatePhase;received:number;total:number;error:string;checkedAt:number|null;notes:string[];autoCheck:boolean;configured:boolean;lastFailure?:{version:string;error:string;failedStage?:string;reopened?:boolean}};

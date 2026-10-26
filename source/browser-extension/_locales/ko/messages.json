@@ -1,0 +1,11 @@
+{
+  "name": {
+    "message": "Bogo Tools 웹 캡처"
+  },
+  "description": {
+    "message": "현재 페이지를 캡처하고 로컬 도구에서 편집합니다."
+  },
+  "capture": {
+    "message": "현재 페이지 캡처"
+  }
+}
