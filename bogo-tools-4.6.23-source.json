@@ -2,28 +2,25 @@
   "schemaVersion": 1,
   "program": "Bogo Tools",
   "version": "4.6.23",
-  "candidateRevision": "r2-unpublished",
+  "candidateRevision": "r3-unpublished",
   "sourceDirectory": "source",
   "sourceArchive": {
     "filename": "Bogo-Tools-4.6.23-source.zip",
-    "bytes": 7442659,
-    "sha256": "2bc1e8b7faf069f5055b7a16ad656aa5fd366bdb015e0c7dd9ed267c10edf999",
-    "files": 440
+    "bytes": 7444893,
+    "sha256": "bde46ce3a1834353aa1107ff6f29241748e29121a5bf88cf659be1c117972ba1",
+    "files": 441
   },
-  "sourceManifestSha256": "cd81f16cd4d1ee7cd9d0e58a74ff2ed1cb24b4296b1eea427b7ab7f781db27c0",
-  "implementationCommit": "f39fe7c01eff416ec1017b31760fd060126e673d",
-  "tests": {
-    "python": {
-      "run": 520,
-      "passed": 518,
-      "failed": 0,
-      "errors": 0,
-      "existingPlatformSkips": 2
-    },
-    "unchangedUiInitialRebrandPassed": 184,
-    "unchangedExtensionInitialRebrandPassed": 51
+  "sourceManifestSha256": "bf4885d360083f87897c4412fb52d514561dd981657c79c5ecf25e3922767ff1",
+  "implementationCommit": "393ebfeb9f5cb4f885edd068743a978cfec78826",
+  "checks": {
+    "uiUnitTestsPassed": 190,
+    "sourceAndCompiledCssTestsPassed": 7,
+    "brandingIntegrityTestsPassed": 7,
+    "compiledBrowserCasesPassed": 46,
+    "freshPackagedSourceIsolationTestsPassed": 6
   },
-  "actualGuiAcceptance": "pending fresh Windows and macOS VM acceptance; no GUI success is claimed by this source commit",
+  "backendAndNativeCodeUnchangedFromR2": true,
+  "actualGuiAcceptance": "pending fresh R3 Windows and macOS VM acceptance; prior R2 is not relabeled",
   "privateDataIncluded": false,
   "historicalImplementationGitHistoryIncluded": false,
   "existingStableUpdateFeedChanged": false

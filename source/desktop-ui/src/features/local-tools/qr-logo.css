@@ -1,5 +1,5 @@
 .kio-qr-logo{margin-top:18px;padding-top:18px;border-top:1px solid var(--color-border)}
-.kio-qr-logo.dragging .kio-qr-logo-row{border-color:#c4ad00;background:#FFF3E8;box-shadow:0 0 0 2px #FFE7D455}
+.kio-qr-logo.dragging .kio-qr-logo-row{border-color:var(--color-primary);background:#FFF3E8;box-shadow:0 0 0 2px #FFE7D455}
 .kio-qr-logo-heading,.kio-qr-logo-row{display:flex;align-items:center;gap:12px}
 .kio-qr-logo-heading{justify-content:space-between;min-height:27px;margin-bottom:12px;font-size:12px}
 .kio-qr-logo-heading strong{font-weight:700}

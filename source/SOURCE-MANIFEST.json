@@ -2377,6 +2377,13 @@
       "sourceSHA256": "6230453ab38c65844c0aee250a8b335d38c880856952e47aae54962d709a1965"
     },
     {
+      "path": "desktop-ui/qa/bogo-theme.test.cjs",
+      "bytes": 6735,
+      "sha256": "1f502beee08ed2e11b0dccd88637beea20eaa1a9c512f9677c13e480f45c858a",
+      "source": "qa/bogo-theme.test.cjs",
+      "sourceSHA256": "1f502beee08ed2e11b0dccd88637beea20eaa1a9c512f9677c13e480f45c858a"
+    },
+    {
       "path": "desktop-ui/qa/canvas-editor-tools.test.cjs",
       "bytes": 1332,
       "sha256": "f8797d1c8d8fa86189ec18048e46714eceaa977bc89b265af62566884bbfaf9a",
@@ -2945,10 +2952,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/ai-translator.css",
-      "bytes": 15483,
-      "sha256": "7250b98a4d11b15f396e159320e4b8c4028287b59d8f75e3e64d7600f2e396d1",
+      "bytes": 15630,
+      "sha256": "88839786d7a8b42195acc82cf361d390f52b48a8bfa83784308148d50d5deafc",
       "source": "src/features/local-tools/ai-translator.css",
-      "sourceSHA256": "7250b98a4d11b15f396e159320e4b8c4028287b59d8f75e3e64d7600f2e396d1"
+      "sourceSHA256": "88839786d7a8b42195acc82cf361d390f52b48a8bfa83784308148d50d5deafc"
     },
     {
       "path": "desktop-ui/src/features/local-tools/ai-types.ts",
@@ -3022,17 +3029,17 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/code-studio.css",
-      "bytes": 9983,
-      "sha256": "78812ac32539ed4e22834b5667b10983f774a5313c04fef71dc72a6cfe0cc551",
+      "bytes": 9995,
+      "sha256": "b5f8b4dc9c0375bd64dc528ff7e0acd8cf9e3cc5e840063fe2c6b37ac9f779aa",
       "source": "src/features/local-tools/code-studio.css",
-      "sourceSHA256": "78812ac32539ed4e22834b5667b10983f774a5313c04fef71dc72a6cfe0cc551"
+      "sourceSHA256": "b5f8b4dc9c0375bd64dc528ff7e0acd8cf9e3cc5e840063fe2c6b37ac9f779aa"
     },
     {
       "path": "desktop-ui/src/features/local-tools/control-settings.css",
-      "bytes": 2905,
-      "sha256": "2ba479815a023b00d862dc9593d9f77aee572e98a93b16c1d4eeedd0e32eea25",
+      "bytes": 2937,
+      "sha256": "82ebc80f1557ab191e590541010120b0068bd1ec7d49dbbdecde83e74c4a854a",
       "source": "src/features/local-tools/control-settings.css",
-      "sourceSHA256": "2ba479815a023b00d862dc9593d9f77aee572e98a93b16c1d4eeedd0e32eea25"
+      "sourceSHA256": "82ebc80f1557ab191e590541010120b0068bd1ec7d49dbbdecde83e74c4a854a"
     },
     {
       "path": "desktop-ui/src/features/local-tools/desktop-events.ts",
@@ -3057,10 +3064,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/document-studio.css",
-      "bytes": 13939,
-      "sha256": "a6c4618c4867887949b1346322be62c8763f7c935401295904aed484e9f6ec81",
+      "bytes": 14084,
+      "sha256": "e4603d8031a5a584886bdbc7c86726a3ef659b978f9d5920b85902e9291d88ac",
       "source": "src/features/local-tools/document-studio.css",
-      "sourceSHA256": "a6c4618c4867887949b1346322be62c8763f7c935401295904aed484e9f6ec81"
+      "sourceSHA256": "e4603d8031a5a584886bdbc7c86726a3ef659b978f9d5920b85902e9291d88ac"
     },
     {
       "path": "desktop-ui/src/features/local-tools/drive-library.ts",
@@ -3092,10 +3099,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/extension-setup.css",
-      "bytes": 6002,
-      "sha256": "a5f9abd3d7463ad5aeaeec25314f9346bbca9531d3fbb796877ccd82e4ddc7b9",
+      "bytes": 6049,
+      "sha256": "e492a2eb74432d6a74cedfd7dcd88fa050878293cb19d249db71eaa4b773931b",
       "source": "src/features/local-tools/extension-setup.css",
-      "sourceSHA256": "a5f9abd3d7463ad5aeaeec25314f9346bbca9531d3fbb796877ccd82e4ddc7b9"
+      "sourceSHA256": "e492a2eb74432d6a74cedfd7dcd88fa050878293cb19d249db71eaa4b773931b"
     },
     {
       "path": "desktop-ui/src/features/local-tools/file-search.ts",
@@ -3106,17 +3113,17 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/file-source-picker.css",
-      "bytes": 2273,
-      "sha256": "d54716fed247dd66931f3671e9e4e765ffdf44b00eff5d4d25559ea9f30d9e87",
+      "bytes": 2424,
+      "sha256": "7a2c52a723af45c762c5f2e49f694f99d358a972b060e7af67f6940f473bc947",
       "source": "src/features/local-tools/file-source-picker.css",
-      "sourceSHA256": "d54716fed247dd66931f3671e9e4e765ffdf44b00eff5d4d25559ea9f30d9e87"
+      "sourceSHA256": "7a2c52a723af45c762c5f2e49f694f99d358a972b060e7af67f6940f473bc947"
     },
     {
       "path": "desktop-ui/src/features/local-tools/file-workspace.css",
-      "bytes": 1573,
-      "sha256": "ad4f3f1dfc70a3dbcef3f7ad96714d3b56727e6e59961fa7110ed1a048d9e13b",
+      "bytes": 1642,
+      "sha256": "47581943faaf24a8020c9747e3fa42ed487e068026fe0f1353b660c6dc0aac6b",
       "source": "src/features/local-tools/file-workspace.css",
-      "sourceSHA256": "ad4f3f1dfc70a3dbcef3f7ad96714d3b56727e6e59961fa7110ed1a048d9e13b"
+      "sourceSHA256": "47581943faaf24a8020c9747e3fa42ed487e068026fe0f1353b660c6dc0aac6b"
     },
     {
       "path": "desktop-ui/src/features/local-tools/floating-toolbar.ts",
@@ -3127,10 +3134,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/general-settings.css",
-      "bytes": 6260,
-      "sha256": "a2fe25777fcf2611db2d64273f2bb1fc6b81e3eca5fb50106d351ac99da0417f",
+      "bytes": 6402,
+      "sha256": "998a22e29fee4c2046443b82f8fad73dcb2f1a7de1e1cf633e74ceed07855eeb",
       "source": "src/features/local-tools/general-settings.css",
-      "sourceSHA256": "a2fe25777fcf2611db2d64273f2bb1fc6b81e3eca5fb50106d351ac99da0417f"
+      "sourceSHA256": "998a22e29fee4c2046443b82f8fad73dcb2f1a7de1e1cf633e74ceed07855eeb"
     },
     {
       "path": "desktop-ui/src/features/local-tools/image-resource.ts",
@@ -3148,10 +3155,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/kio-account.css",
-      "bytes": 3174,
-      "sha256": "1f9395e6facf3aef63e941b10ff3d694c5cc55ebc105d9b5457b8d029ff31e9b",
+      "bytes": 3414,
+      "sha256": "ab4b2277204662f1fe9e46b58fe70c79ffdd2ecc5511edc34c66ab3d056d3c7f",
       "source": "src/features/local-tools/kio-account.css",
-      "sourceSHA256": "1f9395e6facf3aef63e941b10ff3d694c5cc55ebc105d9b5457b8d029ff31e9b"
+      "sourceSHA256": "ab4b2277204662f1fe9e46b58fe70c79ffdd2ecc5511edc34c66ab3d056d3c7f"
     },
     {
       "path": "desktop-ui/src/features/local-tools/kio-account.ts",
@@ -3162,17 +3169,17 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/kio-theme.css",
-      "bytes": 14807,
-      "sha256": "d1966612e74d92f95ec59949f40136a48cb9bc752be9167c28bb0281dacaf0aa",
+      "bytes": 14824,
+      "sha256": "50662bc45f8fd761f048f436f58feca2f4bd8b568eb75216d3048217a99c00f8",
       "source": "src/features/local-tools/kio-theme.css",
-      "sourceSHA256": "d1966612e74d92f95ec59949f40136a48cb9bc752be9167c28bb0281dacaf0aa"
+      "sourceSHA256": "50662bc45f8fd761f048f436f58feca2f4bd8b568eb75216d3048217a99c00f8"
     },
     {
       "path": "desktop-ui/src/features/local-tools/local-tools.css",
-      "bytes": 13187,
-      "sha256": "5f9c20693feaa68371b2c0d8c54a396b3f1cf51a5bc97d03bec161a67cbe9a19",
+      "bytes": 13210,
+      "sha256": "e1ef4a3271fff1e8fc54f8ff202be92fbbc37fcb6a3acab221846edb52776a54",
       "source": "src/features/local-tools/local-tools.css",
-      "sourceSHA256": "5f9c20693feaa68371b2c0d8c54a396b3f1cf51a5bc97d03bec161a67cbe9a19"
+      "sourceSHA256": "e1ef4a3271fff1e8fc54f8ff202be92fbbc37fcb6a3acab221846edb52776a54"
     },
     {
       "path": "desktop-ui/src/features/local-tools/login-copy.ts",
@@ -3204,10 +3211,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/phone-setup-guide.css",
-      "bytes": 6882,
-      "sha256": "5b5c657c1081033b345921e94cfdf66dd3ca68d5d7d12a12a0eca5fb31dcfa06",
+      "bytes": 7171,
+      "sha256": "9383eab16810b3918d9fbec9847f34a010ceefd027c20ef0051f6be4c002cb42",
       "source": "src/features/local-tools/phone-setup-guide.css",
-      "sourceSHA256": "5b5c657c1081033b345921e94cfdf66dd3ca68d5d7d12a12a0eca5fb31dcfa06"
+      "sourceSHA256": "9383eab16810b3918d9fbec9847f34a010ceefd027c20ef0051f6be4c002cb42"
     },
     {
       "path": "desktop-ui/src/features/local-tools/phone-setup-text.ts",
@@ -3218,10 +3225,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/photo-editor.css",
-      "bytes": 1286,
-      "sha256": "9d924afd2f9ca568351ca0f8d0a47053b9c6cdc7e30a83d2f935137dcf7a33b1",
+      "bytes": 1299,
+      "sha256": "fe178793e16c995f482375cb9731bf574c724a655c7e66208ffa3d4d02cf95ee",
       "source": "src/features/local-tools/photo-editor.css",
-      "sourceSHA256": "9d924afd2f9ca568351ca0f8d0a47053b9c6cdc7e30a83d2f935137dcf7a33b1"
+      "sourceSHA256": "fe178793e16c995f482375cb9731bf574c724a655c7e66208ffa3d4d02cf95ee"
     },
     {
       "path": "desktop-ui/src/features/local-tools/photo-layers.ts",
@@ -3232,10 +3239,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/photo-studio.css",
-      "bytes": 11431,
-      "sha256": "2a6aae65cb376cd3cc5eb0be09e44608cd80c10e6012bb0b05292cb65c3f7e0d",
+      "bytes": 11675,
+      "sha256": "710629bf87e617c0ff5aec3954ba799b3593c5ec5b26e5c626982c0ecbb405c5",
       "source": "src/features/local-tools/photo-studio.css",
-      "sourceSHA256": "2a6aae65cb376cd3cc5eb0be09e44608cd80c10e6012bb0b05292cb65c3f7e0d"
+      "sourceSHA256": "710629bf87e617c0ff5aec3954ba799b3593c5ec5b26e5c626982c0ecbb405c5"
     },
     {
       "path": "desktop-ui/src/features/local-tools/photo-studio.ts",
@@ -3253,17 +3260,17 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/qr-logo.css",
-      "bytes": 3105,
-      "sha256": "dcd8bf27cbd5379e34fe6924ccd6842fa44b61d25c6553a8029e4f2f321743df",
+      "bytes": 3118,
+      "sha256": "f20a518703b36ea9a44c1868a41b3cee55a72c672d54582ba89c8add3e18e215",
       "source": "src/features/local-tools/qr-logo.css",
-      "sourceSHA256": "dcd8bf27cbd5379e34fe6924ccd6842fa44b61d25c6553a8029e4f2f321743df"
+      "sourceSHA256": "f20a518703b36ea9a44c1868a41b3cee55a72c672d54582ba89c8add3e18e215"
     },
     {
       "path": "desktop-ui/src/features/local-tools/recording-controls.css",
-      "bytes": 864,
-      "sha256": "e9709516ed718a5ef123b1c6de1b8a35d73f7e00065c9660344d386d30c15b80",
+      "bytes": 890,
+      "sha256": "71d3ae825c21af78fca5048bcf0eb96370872e1422ee24f5b27f45e4c804c116",
       "source": "src/features/local-tools/recording-controls.css",
-      "sourceSHA256": "e9709516ed718a5ef123b1c6de1b8a35d73f7e00065c9660344d386d30c15b80"
+      "sourceSHA256": "71d3ae825c21af78fca5048bcf0eb96370872e1422ee24f5b27f45e4c804c116"
     },
     {
       "path": "desktop-ui/src/features/local-tools/recording-controls.ts",
@@ -3288,10 +3295,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/storage-settings.css",
-      "bytes": 8595,
-      "sha256": "ac884c0cb7d76d10ecd85249c880062172d67499d36c258803be8c042ed3ea29",
+      "bytes": 8640,
+      "sha256": "dbd51456e3b13e1582927d39eb4756321f89a6ce820d16fae169161e87aac3e7",
       "source": "src/features/local-tools/storage-settings.css",
-      "sourceSHA256": "ac884c0cb7d76d10ecd85249c880062172d67499d36c258803be8c042ed3ea29"
+      "sourceSHA256": "dbd51456e3b13e1582927d39eb4756321f89a6ce820d16fae169161e87aac3e7"
     },
     {
       "path": "desktop-ui/src/features/local-tools/subject-selection.css",
@@ -3344,10 +3351,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/video-editor.css",
-      "bytes": 12195,
-      "sha256": "b907e707480b600a23a984ae34f7f54d71abd1d2c1c94c2cf98d65c1bdacd9a1",
+      "bytes": 12373,
+      "sha256": "a237194ab9b3bce11cf075693c0069bbe0db8cea989e6f3e9b403dd3556322e8",
       "source": "src/features/local-tools/video-editor.css",
-      "sourceSHA256": "b907e707480b600a23a984ae34f7f54d71abd1d2c1c94c2cf98d65c1bdacd9a1"
+      "sourceSHA256": "a237194ab9b3bce11cf075693c0069bbe0db8cea989e6f3e9b403dd3556322e8"
     },
     {
       "path": "desktop-ui/src/features/local-tools/video-editor.ts",
@@ -3358,10 +3365,10 @@
     },
     {
       "path": "desktop-ui/src/features/local-tools/video-gif-studio.css",
-      "bytes": 6480,
-      "sha256": "e10b674dbabd37180d3b0ae8b5aa1cde4e930aa7f75ad531d43b8dac24fe8de3",
+      "bytes": 6572,
+      "sha256": "b327b56ffbe6c92e73fc8fde91b70d2d47467d2422d8a311e9c929ec0253c60d",
       "source": "src/features/local-tools/video-gif-studio.css",
-      "sourceSHA256": "e10b674dbabd37180d3b0ae8b5aa1cde4e930aa7f75ad531d43b8dac24fe8de3"
+      "sourceSHA256": "b327b56ffbe6c92e73fc8fde91b70d2d47467d2422d8a311e9c929ec0253c60d"
     },
     {
       "path": "desktop-ui/src/features/local-tools/video-gif.ts",
