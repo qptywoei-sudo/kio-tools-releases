@@ -1,16 +1,21 @@
 """Disposable phone HTTP contract tests. Native approval/ADB/scrcpy are simulated.
+Synthetic signed-in identity, secure vault and cloud are supplied only by the
+reviewed VerifiedAgent fixture. No OS credential or live account is read.
 These fixtures do not prove physical Mac or Windows phone input, audio, or clipboard behavior.
 """
 import hashlib,http.client,json,queue,socket,sys,tempfile,threading,time,unittest
 from pathlib import Path
-HERE=Path(__file__).resolve().parent;sys.path[:0]=[str(HERE),str(HERE.parent/'engine')]
-from server import Agent,Server
+HERE=Path(__file__).resolve().parent;sys.path[:0]=[str(HERE),str(HERE.parent/'engine'),str(HERE.parent/'integration-tests')]
+from server import Server
+from kio_fixture import VerifiedAgent as Agent
 from common import AgentError
 from phone import lan_address
 class NativePhoneFixture:
  def __init__(self,root):self.root=root;self.calls=[];self.supported=True;self.running=False;self.entered=None;self.release=None
  def ready(self):return True
  def status(self):return {'updatedAt':time.time(),'settings':{},'phoneControl':self.supported}
+ def approve(self,origin,name):
+  if origin!='chrome-extension://'+'b'*32 or not name:raise AgentError('pairingDenied',403)
  def call(self,operation,args=None,timeout=90):
   args=args or {};self.calls.append((operation,dict(args)))
   if operation=='phone.status':return {'available':True,'devices':[{'serial':'SERIAL_TEST_ONLY','label':'Galaxy fixture','transport':'usb','status':'device'},{'serial':'UNAPPROVED_TEST_ONLY','label':'Pending fixture','transport':'usb','status':'unauthorized'},{'serial':'bad;arbitrary-shell','label':'Rejected fixture','transport':'wifi','status':'device'}],'running':self.running,'activeSerial':'SERIAL_TEST_ONLY' if self.running else '', 'options':{'keyboard':'uhid','mouse':'sdk','audio':'output','clipboard':True}}
@@ -23,9 +28,12 @@ class PhoneTests(unittest.TestCase):
  def setUp(self):
   self.temp=tempfile.TemporaryDirectory();base=Path(self.temp.name);ui=base/'ui';ui.mkdir()
   with socket.socket() as sock:sock.bind(('127.0.0.1',0));self.port=sock.getsockname()[1]
-  self.origin=f'http://127.0.0.1:{self.port}';self.other=f'http://localhost:{self.port}';self.token='native-approval-simulated-test-token';self.otherToken='second-simulated-test-token'
+  self.origin=f'http://127.0.0.1:{self.port}';self.other='chrome-extension://'+'b'*32
   self.agent=Agent(base/'state',ui,self.port);self.native=NativePhoneFixture(self.agent.bridge.root);self.agent.bridge=self.native
-  self.agent.tokens={self.origin:{'digest':hashlib.sha256(self.token.encode()).hexdigest()},self.other:{'digest':hashlib.sha256(self.otherToken.encode()).hexdigest()}}
+  # Use the current native bootstrap and one explicitly approved mock extension.
+  # Generic loopback origins and invented digest-only tokens are not trusted.
+  self.agent.origins.add(self.other)
+  self.token=self.agent.desktop_session['token'];self.otherToken=self.agent.pair(self.other,'Only approved phone ownership fixture')['token']
   self.server=Server(self.agent);threading.Thread(target=self.server.serve_forever,daemon=True).start()
  def tearDown(self):self.server.shutdown();self.server.server_close();self.agent.close();self.temp.cleanup()
  def request(self,method,path,body=None,origin=None,token=None):
@@ -41,9 +49,9 @@ class PhoneTests(unittest.TestCase):
   self.assertNotIn('SERIAL_TEST_ONLY',json.dumps(value));self.assertNotIn('serial',json.dumps(value));self.assertNotIn('bad;',json.dumps(value))
   other=self.request('GET','/phone',origin=self.other,token=self.otherToken)[1];self.assertNotEqual(value['devices'][0]['id'],other['devices'][0]['id'])
   self.assertEqual(self.request('POST','/phone/start',{'deviceId':value['devices'][0]['id']},origin=self.other,token=self.otherToken)[0],404)
- def test_uhid_keyboard_and_sdk_mouse_clipboard_defaults_reuse_native_start(self):
+ def test_uhid_keyboard_and_mouse_clipboard_defaults_reuse_native_start(self):
   ident=self.selected();self.assertEqual(self.request('POST','/phone/start',{'deviceId':ident})[1],{'success':True})
-  start=next(args for op,args in self.native.calls if op=='phone.start');self.assertEqual(start,{'serial':'SERIAL_TEST_ONLY','keyboard':'uhid','mouse':'sdk','audio':'output','clipboard':True})
+  start=next(args for op,args in self.native.calls if op=='phone.start');self.assertEqual(start,{'serial':'SERIAL_TEST_ONLY','keyboard':'uhid','mouse':'uhid','audio':'output','clipboard':True})
   value=self.request('GET','/phone')[1];self.assertTrue(value['running']);self.assertEqual(value['activeDeviceId'],ident)
  def test_sdk_compatibility_audio_and_clipboard_options_are_typed(self):
   ident=self.selected();self.assertEqual(self.request('POST','/phone/start',{'deviceId':ident,'keyboard':'sdk','mouse':'uhid','audio':'aac','clipboard':False})[0],200)
@@ -80,4 +88,12 @@ class PhoneTests(unittest.TestCase):
  def test_lan_addresses_support_private_link_local_and_explicit_loopback_only(self):
   for address in ('10.0.0.2:5555','172.16.1.2:65535','192.168.1.6:37123','169.254.4.0:5555','127.0.0.1:5555'):self.assertTrue(lan_address(address))
   for address in ('172.32.1.2:5555','127.0.0.2:5555','224.0.0.1:5555'):self.assertFalse(lan_address(address))
+ def test_desktop_and_extension_tokens_cannot_be_swapped_between_owners(self):
+  self.assertEqual(self.request('GET','/phone',origin=self.other,token=self.token)[0],401)
+  self.assertEqual(self.request('POST','/phone/stop',{},origin=self.origin,token=self.otherToken)[0],401)
+  self.assertFalse(self.native.calls)
+ def test_explicit_sdk_mouse_choice_preserves_compatibility(self):
+  self.assertEqual(self.request('POST','/phone/start',{'deviceId':self.selected(),'mouse':'sdk'})[0],200)
+  start=next(args for op,args in self.native.calls if op=='phone.start')
+  self.assertEqual(start['mouse'],'sdk');self.assertEqual(start['keyboard'],'uhid');self.assertTrue(start['clipboard'])
 if __name__=='__main__':unittest.main(verbosity=2)

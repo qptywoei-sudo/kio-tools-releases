@@ -1,5 +1,5 @@
 // Customer-facing single icon. The audited ZIP payload is appended at build time.
-// Windows 10 (1803+) includes the system tar.exe used here; no shell or downloads.
+// The normal system PowerShell/.NET ZIP reader preserves UTF-8 names; no downloads or policy changes.
 #define UNICODE
 #define _UNICODE
 #include <windows.h>
@@ -41,6 +41,161 @@ static bool run(const std::wstring& executable,std::wstring args,DWORD* exitCode
     if(!exitCode) { CloseHandle(pi.hProcess);return true; }
     WaitForSingleObject(pi.hProcess,INFINITE);GetExitCodeProcess(pi.hProcess,exitCode);CloseHandle(pi.hProcess);return *exitCode==0;
 }
+static std::wstring utf16Base64(const std::wstring& text) {
+    static const wchar_t alphabet[]=L"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    const auto* bytes=reinterpret_cast<const unsigned char*>(text.data());
+    size_t length=text.size()*sizeof(wchar_t);std::wstring out;out.reserve((length+2)/3*4);
+    for(size_t i=0;i<length;i+=3){
+        unsigned int value=static_cast<unsigned int>(bytes[i])<<16;
+        if(i+1<length)value|=static_cast<unsigned int>(bytes[i+1])<<8;
+        if(i+2<length)value|=bytes[i+2];
+        out+=alphabet[(value>>18)&63];out+=alphabet[(value>>12)&63];
+        out+=i+1<length?alphabet[(value>>6)&63]:L'=';out+=i+2<length?alphabet[value&63]:L'=';
+    }
+    return out;
+}
+static bool extract(const std::wstring& archive,const std::wstring& root) {
+    // Base64 values are data, not PowerShell syntax. No profile, policy, locale or machine changes.
+    std::wstring expected;for(char c:std::string(KIO_PAYLOAD_SHA256))expected+=static_cast<wchar_t>(c);
+    std::wstring script=L"$zip=[Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('"+utf16Base64(archive)+L"'));"
+        L"$root=[Text.Encoding]::Unicode.GetString([Convert]::FromBase64String('"+utf16Base64(root)+L"'));"
+        L"$expected='"+expected+L"';\n";
+    script+=LR"BOGO_EXTRACT(
+# Embedded verbatim in the proposed PortableLauncher.cpp. Inputs are prepended
+# as Base64-decoded UTF-16 strings, never interpolated into PowerShell syntax.
+$ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
+Set-StrictMode -Version 2
+Add-Type -AssemblyName System.IO.Compression
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+function AttributesOrNull([string]$path) {
+    try { return [IO.File]::GetAttributes($path) }
+    catch [IO.FileNotFoundException] { return $null }
+    catch [IO.DirectoryNotFoundException] { return $null }
+}
+function PlainDirectory([string]$path) {
+    if (-not ($path.Equals($root, [StringComparison]::OrdinalIgnoreCase) -or
+              $path.StartsWith($root + '\', [StringComparison]::OrdinalIgnoreCase))) { throw 'Directory escaped cache' }
+    $current = $root
+    $parts = @('') + @($path.Substring($root.Length).Split('\') | Where-Object { $_ -ne '' })
+    foreach ($part in $parts) {
+        if ($part -ne '') { $current = [IO.Path]::Combine($current, $part) }
+        $attributes = AttributesOrNull $current
+        if ($null -eq $attributes) {
+            [void][IO.Directory]::CreateDirectory($current)
+            $attributes = [IO.File]::GetAttributes($current)
+        }
+        if (($attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0 -or
+            ($attributes -band [IO.FileAttributes]::Directory) -eq 0) { throw 'Unsafe cache directory' }
+    }
+}
+function PlainFileOrAbsent([string]$path) {
+    $attributes = AttributesOrNull $path
+    if ($null -eq $attributes) { return $false }
+    if (($attributes -band [IO.FileAttributes]::ReparsePoint) -ne 0 -or
+        ($attributes -band [IO.FileAttributes]::Directory) -ne 0) { throw 'Unsafe managed file' }
+    return $true
+}
+function Digest([string]$path) {
+    $stream = [IO.File]::Open($path, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::Read)
+    $hash = [Security.Cryptography.SHA256]::Create()
+    try { return [BitConverter]::ToString($hash.ComputeHash($stream)).Replace('-', '').ToLowerInvariant() }
+    finally { $hash.Dispose(); $stream.Dispose() }
+}
+
+$archiveStream = $null
+$archive = $null
+try {
+    if ($expected -cnotmatch '^[0-9a-f]{64}$') { throw 'Invalid compiled payload digest' }
+    $root = [IO.Path]::GetFullPath($root).TrimEnd('\')
+    # Hold the authenticated archive open without write/delete sharing throughout extraction.
+    if (-not (PlainFileOrAbsent $zip)) { throw 'Missing authenticated archive' }
+    $archiveStream = [IO.File]::Open($zip, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::Read)
+    $hasher = [Security.Cryptography.SHA256]::Create()
+    try { $digest = [BitConverter]::ToString($hasher.ComputeHash($archiveStream)).Replace('-', '').ToLowerInvariant() }
+    finally { $hasher.Dispose() }
+    if ($digest -cne $expected) { throw 'Payload digest mismatch' }
+    $archiveStream.Position = 0
+    $archive = [IO.Compression.ZipArchive]::new($archiveStream, [IO.Compression.ZipArchiveMode]::Read, $true)
+    if ($archive.Entries.Count -lt 1 -or $archive.Entries.Count -gt 5000) { throw 'Invalid entry count' }
+    $seen = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+    $entries = [Collections.Generic.List[object]]::new()
+    [long]$total = 0
+    # Validate the entire archive before changing even a single installed file.
+    foreach ($entry in $archive.Entries) {
+        $name = $entry.FullName
+        if ($name.Contains('\')) { throw 'Noncanonical archive path' }
+        $parts = $name.Split('/')
+        if ($parts.Count -lt 2 -or $parts[0] -cne 'KIO-Control-Windows') { throw 'Foreign archive root' }
+        foreach ($part in $parts) {
+            if ($part -eq '' -or $part -eq '.' -or $part -eq '..' -or
+                $part -match '[\x00-\x1f:\*?<>|]' -or $part.EndsWith('.') -or $part.EndsWith(' ') -or
+                $part -match '^(?i:CON|PRN|AUX|NUL|COM[1-9]|LPT[1-9])(?:\..*)?$') { throw 'Unsafe archive component' }
+        }
+        $attributes = [uint32]([long]$entry.ExternalAttributes -band 4294967295)
+        $kind = ($attributes -shr 16) -band 61440
+        if ($kind -ne 0 -and $kind -ne 32768) { throw 'Nonregular archive entry' }
+        if (($attributes -band 1024) -ne 0 -or $entry.Length -lt 0 -or $entry.Length -gt 1073741824) { throw 'Invalid entry metadata' }
+        $total += $entry.Length
+        if ($total -gt 8589934592) { throw 'Oversized archive' }
+        $target = [IO.Path]::GetFullPath([IO.Path]::Combine($root, $name.Replace('/', '\')))
+        if (-not $target.StartsWith($root + '\', [StringComparison]::OrdinalIgnoreCase) -or -not $seen.Add($target)) { throw 'Escaping or duplicate target' }
+        $entries.Add([PSCustomObject]@{ Entry = $entry; Target = $target; Relative = $name.Replace('/', '\') })
+    }
+    PlainDirectory $root
+    $stage = [IO.Path]::Combine($root, '.bogo-extract-' + [Guid]::NewGuid().ToString('N'))
+    if ($null -ne (AttributesOrNull $stage)) { throw 'Extraction staging collision' }
+    PlainDirectory $stage
+    $new = [IO.Path]::Combine($stage, 'new')
+    $previous = [IO.Path]::Combine($stage, 'previous')
+    PlainDirectory $new
+    [int]$index = 0
+    foreach ($item in $entries) {
+        $temporary = [IO.Path]::Combine($new, $index.ToString() + '.tmp')
+        $index += 1
+        # CreateNew never overwrites an existing file; all temporary files belong to this invocation.
+        [IO.Compression.ZipFileExtensions]::ExtractToFile($item.Entry, $temporary, $false)
+        if (([IO.FileInfo]::new($temporary)).Length -ne $item.Entry.Length) { throw 'Incomplete extracted entry' }
+        $targetParent = [IO.Path]::GetDirectoryName($item.Target)
+        PlainDirectory $targetParent
+        $exists = PlainFileOrAbsent $item.Target
+        if ($exists -and (([IO.FileInfo]::new($item.Target)).Length -eq $item.Entry.Length) -and
+            (Digest $item.Target) -ceq (Digest $temporary)) {
+            # A failed old tar extraction leaves 3,902 exact files: keep their bytes and file IDs.
+            [IO.File]::Delete($temporary)
+        } elseif ($exists) {
+            # Atomic replacement changes only this directory entry (never writes through a hard link).
+            # Retain every replaced old file outside the application tree for recovery.
+            $backup = [IO.Path]::Combine($previous, $item.Relative)
+            PlainDirectory ([IO.Path]::GetDirectoryName($backup))
+            if ($null -ne (AttributesOrNull $backup)) { throw 'Recovery backup collision' }
+            [void](PlainFileOrAbsent $item.Target)
+            [IO.File]::Replace($temporary, $item.Target, $backup, $false)
+        } else {
+            [IO.File]::Move($temporary, $item.Target)
+        }
+    }
+    [IO.Directory]::Delete($new, $false)
+    if ($null -eq (AttributesOrNull $previous)) { [IO.Directory]::Delete($stage, $false) }
+} catch {
+    # No ready marker, no application launch, no deletion of unknown files or recovery backups.
+    exit 1
+} finally {
+    if ($null -ne $archive) { $archive.Dispose() }
+    if ($null -ne $archiveStream) { $archiveStream.Dispose() }
+}
+exit 0
+)BOGO_EXTRACT";
+    if(script.find(L'"')!=std::wstring::npos)return false;
+    std::wstring command=L"-NoProfile -NonInteractive -Command "+quote(script);
+    // The Windows command-line limit includes the absolute executable name and its quotes.
+    wchar_t system[32768];UINT count=GetSystemDirectoryW(system,32768);
+    if(!count||count>=32768)return false;
+    std::wstring executable=std::wstring(system)+L"\\WindowsPowerShell\\v1.0\\powershell.exe";
+    if(command.size()+executable.size()+4>=32767)return false;
+    DWORD result=1;return run(executable,command,&result);
+}
 static bool payload(const std::wstring& self,const std::wstring& output) {
     FILE* in=_wfopen(self.c_str(),L"rb");if(!in)return false;
     unsigned long long length=0;char magic[8];
@@ -67,7 +222,7 @@ int WINAPI wWinMain(HINSTANCE,HINSTANCE,PWSTR,int) {
     DWORD marked=GetFileAttributesW(marker.c_str());
     if(ok&&marked==INVALID_FILE_ATTRIBUTES){
         std::wstring archive=root+L"\\payload.zip";ok=payload(self,archive);
-        if(ok){UINT count=GetSystemDirectoryW(path,32768);DWORD result=1;ok=count&&count<32768&&run(std::wstring(path)+L"\\tar.exe",L"-xf "+quote(archive)+L" -C "+quote(root),&result);}
+        if(ok)ok=extract(archive,root);
         DeleteFileW(archive.c_str());
         if(ok){HANDLE ready=CreateFileW(marker.c_str(),GENERIC_WRITE,0,nullptr,CREATE_ALWAYS,FILE_ATTRIBUTE_NORMAL,nullptr);ok=ready!=INVALID_HANDLE_VALUE;if(ok){FlushFileBuffers(ready);CloseHandle(ready);}}
     }

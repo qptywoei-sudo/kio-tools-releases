@@ -2063,10 +2063,10 @@
     },
     {
       "path": "agent/phone_tests.py",
-      "bytes": 9359,
-      "sha256": "f5cac60d9407a14c8fd08cf6a40fd9a7a2afbf196329ee7ffd871a8d3034ec0a",
+      "bytes": 10477,
+      "sha256": "998c6563be64f5b797cfdb68184ac58720dd902d703d70621b61675a6b62d4be",
       "source": "agent/phone_tests.py",
-      "sourceSHA256": "f5cac60d9407a14c8fd08cf6a40fd9a7a2afbf196329ee7ffd871a8d3034ec0a"
+      "sourceSHA256": "998c6563be64f5b797cfdb68184ac58720dd902d703d70621b61675a6b62d4be"
     },
     {
       "path": "agent/process_group.py",
@@ -3951,6 +3951,13 @@
       "sourceSHA256": "a2406f0ddf422a9faba512be6bee0419485d348b8bdafbe7b8c4179e203428fb"
     },
     {
+      "path": "integration-tests/portable_extraction_tests.py",
+      "bytes": 3819,
+      "sha256": "409a5852cf939acec87f397a5cacba9df4daac0c4a044ef8c8caaf6579f00bc4",
+      "source": "integration-tests/portable_extraction_tests.py",
+      "sourceSHA256": "409a5852cf939acec87f397a5cacba9df4daac0c4a044ef8c8caaf6579f00bc4"
+    },
+    {
       "path": "integration-tests/qr_logo_tests.py",
       "bytes": 7914,
       "sha256": "cb27200a8ab7529fc864e5eeca1ae85e726a5d4a319787cc17ac0f762b915da0",
@@ -4708,10 +4715,10 @@
     },
     {
       "path": "windows/PortableLauncher.cpp",
-      "bytes": 6009,
-      "sha256": "4c9dbc3c63da77f8ce77555ded0d2fcd9e0e8aab8c4141305ca2d85d0cdabab2",
+      "bytes": 14883,
+      "sha256": "718136871df5ec36550d4dca50dc8249362ee61c32ed1442f48f76d8844f3629",
       "source": "windows/PortableLauncher.cpp",
-      "sourceSHA256": "4c9dbc3c63da77f8ce77555ded0d2fcd9e0e8aab8c4141305ca2d85d0cdabab2"
+      "sourceSHA256": "718136871df5ec36550d4dca50dc8249362ee61c32ed1442f48f76d8844f3629"
     },
     {
       "path": "windows/RecorderLiveSelftest.cpp",

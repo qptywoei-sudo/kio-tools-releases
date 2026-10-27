@@ -2,26 +2,24 @@
   "schemaVersion": 1,
   "program": "Bogo Tools",
   "version": "4.6.23",
-  "candidateRevision": "r3-unpublished",
+  "candidateRevision": "r4-unpublished",
   "sourceDirectory": "source",
   "sourceArchive": {
     "filename": "Bogo-Tools-4.6.23-source.zip",
-    "bytes": 7444893,
-    "sha256": "bde46ce3a1834353aa1107ff6f29241748e29121a5bf88cf659be1c117972ba1",
-    "files": 441
+    "bytes": 7450240,
+    "sha256": "3dde19c49d1b4c68e762a1cbb9926fa370f36b7130e560a78dd56d2e28beec70",
+    "files": 442
   },
-  "sourceManifestSha256": "bf4885d360083f87897c4412fb52d514561dd981657c79c5ecf25e3922767ff1",
-  "implementationCommit": "393ebfeb9f5cb4f885edd068743a978cfec78826",
-  "checks": {
-    "uiUnitTestsPassed": 190,
-    "sourceAndCompiledCssTestsPassed": 7,
-    "brandingIntegrityTestsPassed": 7,
-    "compiledBrowserCasesPassed": 46,
-    "freshPackagedSourceIsolationTestsPassed": 6
+  "sourceManifestSha256": "bb7560994ae2e79b7c6a284b7d752d9c339a870ad6ae948bdbb8c2b8c22ee52b",
+  "implementationCommit": "38d361842ceb510ddcf7d943696db22a4e00437a",
+  "actual24WindowsExtraction": {
+    "runId": 40428782255,
+    "passed": 24,
+    "failed": 0,
+    "skipped": 0
   },
-  "backendAndNativeCodeUnchangedFromR2": true,
-  "actualGuiAcceptance": "pending fresh R3 Windows and macOS VM acceptance; prior R2 is not relabeled",
+  "actualGuiAcceptance": "pending new R4 Windows and macOS VM acceptance; historical R3 is not relabeled",
+  "stableUpdateFeedChanged": false,
   "privateDataIncluded": false,
-  "historicalImplementationGitHistoryIncluded": false,
-  "existingStableUpdateFeedChanged": false
+  "historicalImplementationGitHistoryIncluded": false
 }
